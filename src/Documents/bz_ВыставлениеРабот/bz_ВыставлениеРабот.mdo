@@ -352,10 +352,10 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="78e4c9c5-2bda-4c0d-bf61-d9adf9b6ab40">
-      <name>УдалитьСодержание</name>
+      <name>Содержание</name>
       <synonym>
         <key>ru</key>
-        <value>Удалить содержание</value>
+        <value>Содержание</value>
       </synonym>
       <type>
         <types>String</types>
@@ -367,10 +367,10 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="00a9c216-3e6e-4c28-a55d-6f1f42537828">
-      <name>УдалитьПримечание</name>
+      <name>Примечание</name>
       <synonym>
         <key>ru</key>
-        <value>Удалить примечание</value>
+        <value>Примечание</value>
       </synonym>
       <type>
         <types>String</types>
@@ -507,6 +507,102 @@
         <numberQualifiers>
           <precision>10</precision>
           <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="22dd5c2f-577b-4b51-80e2-f39cdf336084">
+      <name>Действие</name>
+      <synonym>
+        <key>ru</key>
+        <value>Действие</value>
+      </synonym>
+      <type>
+        <types>EnumRef.bz_ВариантыВыставленияОтработанногоВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6e5a9d50-b8ea-4c18-aed3-f2a3f3bad4e0">
+      <name>Причина</name>
+      <synonym>
+        <key>ru</key>
+        <value>Причина</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.bz_ПричиныСписанияТрудозатрат</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6ac4dcc1-494c-473f-a5eb-a7a2a1f3e991">
+      <name>Цена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="45e34dce-cd9a-4505-aa7c-0d3165c3a434">
+      <name>СодержаниеИзменено</name>
+      <synonym>
+        <key>ru</key>
+        <value>Содержание/примечание изменено</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6d0698ce-80d6-44e3-90e2-8f005030e2fe">
+      <name>Сумма1</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма1</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b2ad9d8a-5a56-4760-befd-914b8aafaabd">
+      <name>Цена1</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена1</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
         </numberQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
