@@ -4,7 +4,7 @@
 		<selection/>
 		<filter>
 			<item xsi:type="FilterItemComparison">
-				<left xsi:type="dcscor:Field">Объект.ТекущаяВыработка.ИзмененаВручную</left>
+				<left xsi:type="dcscor:Field">Объект.Выработка.ИзмененаВручную</left>
 				<comparisonType>Equal</comparisonType>
 				<right xsi:type="xs:boolean">true</right>
 			</item>
@@ -18,29 +18,43 @@
 		<presentation xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>Реквизиты выполнения работ изменены вручную - жирный</v8:content>
+				<v8:content>Реквизиты выполнения работ изменены вручную - курсив</v8:content>
 			</v8:item>
 		</presentation>
 	</item>
 	<item>
-		<selection/>
+		<selection>
+			<item>
+				<field>ТекущаяВыработкаСумма</field>
+			</item>
+		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
-				<left xsi:type="dcscor:Field">Объект.ТекущаяВыработка.СуммаОтработано</left>
+				<left xsi:type="dcscor:Field">Объект.Выработка.Сумма</left>
 				<comparisonType>Equal</comparisonType>
 				<right xsi:type="xs:decimal">0</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.Выработка.Действие</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Перечисление.bz_ВариантыВыставленияОтработанногоВремени.Выставить</right>
 			</item>
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
 				<dcscor:parameter>ЦветФона</dcscor:parameter>
 				<dcscor:value xsi:type="v8ui:Color">style:ЦветФонаНекорректногоКонтрагента</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 			</dcscor:item>
 		</appearance>
 		<presentation xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>Нулевая сумма - розовый фон</v8:content>
+				<v8:content>Нулевая сумма и действие - выставлять - отметка незаполненного</v8:content>
 			</v8:item>
 		</presentation>
 	</item>
@@ -48,9 +62,9 @@
 		<selection/>
 		<filter>
 			<item xsi:type="FilterItemComparison">
-				<left xsi:type="dcscor:Field">Объект.ТекущаяВыработка.КоличествоСписано</left>
-				<comparisonType>NotEqual</comparisonType>
-				<right xsi:type="xs:decimal">0</right>
+				<left xsi:type="dcscor:Field">Объект.Выработка.Действие</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Перечисление.bz_ВариантыВыставленияОтработанногоВремени.Списать</right>
 			</item>
 		</filter>
 		<appearance>
@@ -70,19 +84,10 @@
 		<selection/>
 		<filter>
 			<item xsi:type="FilterItemComparison">
-				<left xsi:type="dcscor:Field">Объект.ТекущаяВыработка.КоличествоВыставлено</left>
-				<comparisonType>Equal</comparisonType>
-				<right xsi:type="xs:decimal">0</right>
-			</item>
-			<item xsi:type="FilterItemComparison">
-				<left xsi:type="dcscor:Field">Объект.ТекущаяВыработка.КоличествоОтработано</left>
-				<comparisonType>NotEqual</comparisonType>
-				<right xsi:type="xs:decimal">0</right>
-			</item>
-			<item xsi:type="FilterItemComparison">
-				<left xsi:type="dcscor:Field">Объект.ТекущаяВыработка.КоличествоСписано</left>
-				<comparisonType>Equal</comparisonType>
-				<right xsi:type="xs:decimal">0</right>
+				<left xsi:type="dcscor:Field">Объект.Выработка.Действие</left>
+				<comparisonType>InList</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Перечисление.bz_ВариантыВыставленияОтработанногоВремени.ОтложитьТолькоКоличество</right>
+				<right xsi:type="dcscor:DesignTimeValue">Перечисление.bz_ВариантыВыставленияОтработанногоВремени.ОтложитьССуммой</right>
 			</item>
 		</filter>
 		<appearance>
@@ -100,6 +105,190 @@
 			<v8:item>
 				<v8:lang>ru</v8:lang>
 				<v8:content>Выработка перенесенная на будущее - оранжевый</v8:content>
+			</v8:item>
+		</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТекущаяВыработкаПричина</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.Выработка.Действие</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Перечисление.bz_ВариантыВыставленияОтработанногоВремени.Списать</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.Выработка.Причина</left>
+				<comparisonType>NotFilled</comparisonType>
+				<right xsi:nil="true"/>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ставим отметку незаполненного на причину, если не заполнена причина и действие - списание</v8:content>
+			</v8:item>
+		</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТекущаяВыработкаСодержание</field>
+			</item>
+			<item>
+				<field>ТекущаяВыработкаПримечание</field>
+			</item>
+			<item>
+				<field>ВыработкаСодержание</field>
+			</item>
+			<item>
+				<field>ВыработкаПримечание</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.Выработка.СодержаниеИзменено</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Шрифт</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Комментарии/примечание изменены вручную - жирные</v8:content>
+			</v8:item>
+		</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТекущаяВыработкаПричина</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.Выработка.Действие</left>
+				<comparisonType>NotEqual</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Перечисление.bz_ВариантыВыставленияОтработанногоВремени.Списать</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkGray</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Заполнение не требуется</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Шрифт</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Если действие не списание - заполнение причины не требуется</v8:content>
+			</v8:item>
+		</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТекущаяВыработкаПримечание</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.Выработка.Действие</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Перечисление.bz_ВариантыВыставленияОтработанногоВремени.Списать</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.Выработка.Примечание</left>
+				<comparisonType>NotFilled</comparisonType>
+				<right xsi:nil="true"/>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ставим отметку незаполненного на примечание если оно не заполнено и действие - списание</v8:content>
+			</v8:item>
+		</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ТекущаяВыработкаСодержание</field>
+			</item>
+			<item>
+				<field>ВыработкаСодержание</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.Выработка.Действие</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Перечисление.bz_ВариантыВыставленияОтработанногоВремени.Списать</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Если действие - списание, скрываем содержание</v8:content>
 			</v8:item>
 		</presentation>
 	</item>

@@ -29,22 +29,6 @@
   <registerRecords>AccumulationRegister.bz_Выработка</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
-  <attributes uuid="a1103044-1d03-42e7-b987-3b840a9caed8">
-    <name>Проект</name>
-    <synonym>
-      <key>ru</key>
-      <value>Проект</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.bz_Проекты</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="fb5f9d76-ee1d-4658-ba5e-b59559f551bc">
     <name>Организация</name>
     <synonym>
@@ -61,23 +45,33 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="2747e9b6-b7f2-40cf-af5d-b8a5d899db4c">
-    <name>Периодичность</name>
+  <attributes uuid="a1103044-1d03-42e7-b987-3b840a9caed8">
+    <name>Проект</name>
     <synonym>
       <key>ru</key>
-      <value>Периодичность</value>
+      <value>Проект</value>
     </synonym>
     <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>10</length>
-      </stringQualifiers>
+      <types>CatalogRef.bz_Проекты</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="662da7d1-cfa8-4348-a95d-41a9dbe501fa">
+    <name>Согласован</name>
+    <synonym>
+      <key>ru</key>
+      <value>Согласован</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
@@ -95,10 +89,10 @@
       <objectType typeId="27880969-9b1a-4f09-a7d2-97d9d225809b" valueTypeId="b135a68a-ecfa-41cf-a04d-52a39a8bfd90"/>
       <rowType typeId="4113c1ad-efd1-469a-9d08-7beabbd22506" valueTypeId="016b7cdc-ca19-4602-8cbc-c268d8a9a79a"/>
     </producedTypes>
-    <name>ВыработкаПрошлыхПериодов</name>
+    <name>УдалитьВыработкаПрошлыхПериодов</name>
     <synonym>
       <key>ru</key>
-      <value>Выработка прошлых периодов</value>
+      <value>Удалить выработка прошлых периодов</value>
     </synonym>
     <attributes uuid="bd07eabc-e220-4d73-a758-b7172315a341">
       <name>Этап</name>
@@ -385,13 +379,31 @@
       <name>Количество</name>
       <synonym>
         <key>ru</key>
-        <value>Количество</value>
+        <value>Трудозатраты</value>
       </synonym>
       <type>
         <types>Number</types>
         <numberQualifiers>
           <precision>15</precision>
           <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6ac4dcc1-494c-473f-a5eb-a7a2a1f3e991">
+      <name>Цена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ставка</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
         </numberQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
@@ -417,11 +429,40 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="d5ee3325-cf52-4498-b2c6-420afeabb6ec">
-      <name>КоличествоВыставлено</name>
+    <attributes uuid="22dd5c2f-577b-4b51-80e2-f39cdf336084">
+      <name>Действие</name>
       <synonym>
         <key>ru</key>
-        <value>Количество выставлено</value>
+        <value>Действие</value>
+      </synonym>
+      <type>
+        <types>EnumRef.bz_ВариантыВыставленияОтработанногоВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6e5a9d50-b8ea-4c18-aed3-f2a3f3bad4e0">
+      <name>Причина</name>
+      <synonym>
+        <key>ru</key>
+        <value>Причина</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.bz_ПричиныСписанияТрудозатрат</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d5ee3325-cf52-4498-b2c6-420afeabb6ec">
+      <name>УдалитьКоличествоВыставлено</name>
+      <synonym>
+        <key>ru</key>
+        <value>Удалить количество выставлено</value>
       </synonym>
       <type>
         <types>Number</types>
@@ -436,10 +477,10 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="d009b01b-b3db-47f6-aba6-9d6f501bf1be">
-      <name>КоличествоСписано</name>
+      <name>УдалитьКоличествоСписано</name>
       <synonym>
         <key>ru</key>
-        <value>Количество списано</value>
+        <value>Удалить количество списано</value>
       </synonym>
       <type>
         <types>Number</types>
@@ -468,20 +509,6 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="3896b4ed-cb96-4d3c-a390-10d5f655459a">
-      <name>ИзмененаВручную</name>
-      <synonym>
-        <key>ru</key>
-        <value>Изменена вручную</value>
-      </synonym>
-      <type>
-        <types>Boolean</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
     <attributes uuid="2fef8926-1235-40e7-8e37-6d0b0eeb02e2">
       <name>ПВР</name>
       <synonym>
@@ -496,64 +523,14 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="58345e94-7647-4200-a07d-ae540dd0a323">
-      <name>КлючСтроки</name>
+    <attributes uuid="3896b4ed-cb96-4d3c-a390-10d5f655459a">
+      <name>ИзмененаВручную</name>
       <synonym>
         <key>ru</key>
-        <value>Ключ строки</value>
+        <value>Изменена вручную</value>
       </synonym>
       <type>
-        <types>Number</types>
-        <numberQualifiers>
-          <precision>10</precision>
-          <nonNegative>true</nonNegative>
-        </numberQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="22dd5c2f-577b-4b51-80e2-f39cdf336084">
-      <name>Действие</name>
-      <synonym>
-        <key>ru</key>
-        <value>Действие</value>
-      </synonym>
-      <type>
-        <types>EnumRef.bz_ВариантыВыставленияОтработанногоВремени</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="6e5a9d50-b8ea-4c18-aed3-f2a3f3bad4e0">
-      <name>Причина</name>
-      <synonym>
-        <key>ru</key>
-        <value>Причина</value>
-      </synonym>
-      <type>
-        <types>CatalogRef.bz_ПричиныСписанияТрудозатрат</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="6ac4dcc1-494c-473f-a5eb-a7a2a1f3e991">
-      <name>Цена</name>
-      <synonym>
-        <key>ru</key>
-        <value>Цена</value>
-      </synonym>
-      <type>
-        <types>Number</types>
-        <numberQualifiers>
-          <precision>10</precision>
-          <scale>2</scale>
-        </numberQualifiers>
+        <types>Boolean</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
@@ -574,18 +551,14 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="6d0698ce-80d6-44e3-90e2-8f005030e2fe">
-      <name>Сумма1</name>
+    <attributes uuid="72e78106-3ec6-42f3-8b0d-39a41c0caaef">
+      <name>СписатьПоДругойЦене</name>
       <synonym>
         <key>ru</key>
-        <value>Сумма1</value>
+        <value>Списать по другой цене</value>
       </synonym>
       <type>
-        <types>Number</types>
-        <numberQualifiers>
-          <precision>15</precision>
-          <scale>2</scale>
-        </numberQualifiers>
+        <types>Boolean</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
@@ -593,10 +566,10 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="b2ad9d8a-5a56-4760-befd-914b8aafaabd">
-      <name>Цена1</name>
+      <name>ЦенаСписания</name>
       <synonym>
         <key>ru</key>
-        <value>Цена1</value>
+        <value>Цена списания</value>
       </synonym>
       <type>
         <types>Number</types>
@@ -610,104 +583,11 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-  </tabularSections>
-  <tabularSections uuid="fd56f9a2-3729-4af6-82e5-e85ec23cb386">
-    <producedTypes>
-      <objectType typeId="17316067-e36e-4285-92de-ff393e940c14" valueTypeId="e68ae0fd-d8db-4652-89af-c22994c9a6db"/>
-      <rowType typeId="b72522fa-99eb-4cb9-91f4-e043a97a8d37" valueTypeId="9d33afaa-ad24-4e13-a1f6-2352a47e087b"/>
-    </producedTypes>
-    <name>РаспределениеВыработки</name>
-    <synonym>
-      <key>ru</key>
-      <value>Распределение выработки</value>
-    </synonym>
-    <attributes uuid="c8895cb7-c534-4fdf-90a7-ded22b7bebfd">
-      <name>КлючСтрокиВыработки</name>
+    <attributes uuid="6d0698ce-80d6-44e3-90e2-8f005030e2fe">
+      <name>СуммаСписания</name>
       <synonym>
         <key>ru</key>
-        <value>Ключ строки выработки</value>
-      </synonym>
-      <type>
-        <types>Number</types>
-        <numberQualifiers>
-          <precision>10</precision>
-          <nonNegative>true</nonNegative>
-        </numberQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="fe9e179e-d21c-4d42-ac7b-293dd7e372fa">
-      <name>Действие</name>
-      <synonym>
-        <key>ru</key>
-        <value>Действие</value>
-      </synonym>
-      <type>
-        <types>EnumRef.bz_ВариантыВыставленияОтработанногоВремени</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="d751066a-8dc0-4710-a03d-6f976f957d10">
-      <name>Причина</name>
-      <synonym>
-        <key>ru</key>
-        <value>Причина</value>
-      </synonym>
-      <type>
-        <types>CatalogRef.bz_ПричиныСписанияТрудозатрат</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="3e35548c-d742-4922-a1df-2433ec17b06c">
-      <name>Количество</name>
-      <synonym>
-        <key>ru</key>
-        <value>Количество</value>
-      </synonym>
-      <type>
-        <types>Number</types>
-        <numberQualifiers>
-          <precision>15</precision>
-          <scale>3</scale>
-        </numberQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="bf9bdbba-3cbc-46db-8c32-c483a8762e4b">
-      <name>Цена</name>
-      <synonym>
-        <key>ru</key>
-        <value>Цена</value>
-      </synonym>
-      <type>
-        <types>Number</types>
-        <numberQualifiers>
-          <precision>10</precision>
-          <scale>2</scale>
-        </numberQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="f53436e4-ae26-4a03-b0ef-aa5a97fb103b">
-      <name>Сумма</name>
-      <synonym>
-        <key>ru</key>
-        <value>Сумма</value>
+        <value>Сумма списания</value>
       </synonym>
       <type>
         <types>Number</types>
@@ -721,30 +601,14 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="267686fd-963b-4fa1-bdef-f1c8a1d0ee1d">
-      <name>Содержание</name>
+    <attributes uuid="9eab8ed7-6b29-40df-ad68-5b4035523504">
+      <name>Проект</name>
       <synonym>
         <key>ru</key>
-        <value>Содержание</value>
+        <value>Проект</value>
       </synonym>
       <type>
-        <types>String</types>
-        <stringQualifiers/>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="a94de312-be26-4cb8-95b4-426f634db5f9">
-      <name>Примечание</name>
-      <synonym>
-        <key>ru</key>
-        <value>Примечание</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers/>
+        <types>CatalogRef.bz_Проекты</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

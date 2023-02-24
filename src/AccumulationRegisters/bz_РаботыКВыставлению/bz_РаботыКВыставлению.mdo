@@ -51,10 +51,10 @@
     <fullTextSearch>Use</fullTextSearch>
   </resources>
   <resources uuid="31a93e2e-7a06-4027-b688-929bbb1c39c1">
-    <name>КоличествоКВыставлению</name>
+    <name>КоличествоНаСогласовании</name>
     <synonym>
       <key>ru</key>
-      <value>Количество к выставлению</value>
+      <value>Количество на согласовании</value>
     </synonym>
     <type>
       <types>Number</types>
@@ -68,10 +68,10 @@
     <fullTextSearch>Use</fullTextSearch>
   </resources>
   <resources uuid="9d4b36b7-b87e-4a39-a6a7-261a386ec2e8">
-    <name>СуммаКВыставлению</name>
+    <name>СуммаНаСогласовании</name>
     <synonym>
       <key>ru</key>
-      <value>Сумма к выставлению</value>
+      <value>Сумма на согласовании</value>
     </synonym>
     <type>
       <types>Number</types>

@@ -55,10 +55,10 @@
     <fullTextSearch>Use</fullTextSearch>
   </resources>
   <resources uuid="33f97147-84df-4ee9-968d-4e65aee876c9">
-    <name>СуммаВыставлено</name>
+    <name>СуммаСогласовано</name>
     <synonym>
       <key>ru</key>
-      <value>Сумма выставлено</value>
+      <value>Сумма согласовано</value>
     </synonym>
     <type>
       <types>Number</types>
@@ -72,10 +72,10 @@
     <fullTextSearch>Use</fullTextSearch>
   </resources>
   <resources uuid="6b04f929-41ea-4baf-8d66-7e58706b4c10">
-    <name>ТрудозатратыВыставлено</name>
+    <name>ТрудозатратыСогласовано</name>
     <synonym>
       <key>ru</key>
-      <value>Трудозатраты выставлено (ч)</value>
+      <value>Трудозатраты согласовано (ч)</value>
     </synonym>
     <comment>Трудозатраты (в часах дробно)</comment>
     <type>
@@ -91,10 +91,10 @@
     <fullTextSearch>Use</fullTextSearch>
   </resources>
   <resources uuid="310d7a5f-d93b-46c2-864f-c6d20375b28a">
-    <name>ТрудозатратыДляСогласования</name>
+    <name>ТрудозатратыНаСогласовании</name>
     <synonym>
       <key>ru</key>
-      <value>Трудозатраты для согласования (ч)</value>
+      <value>Трудозатраты на согласовании (ч)</value>
     </synonym>
     <comment>Трудозатраты (в часах дробно)</comment>
     <type>
@@ -110,10 +110,10 @@
     <fullTextSearch>Use</fullTextSearch>
   </resources>
   <resources uuid="8840e04d-aa83-4b19-b3ae-dcf6600db160">
-    <name>СуммаДляСогласования</name>
+    <name>СуммаНаСогласовании</name>
     <synonym>
       <key>ru</key>
-      <value>Сумма для согласования</value>
+      <value>Сумма на согласовании</value>
     </synonym>
     <type>
       <types>Number</types>
