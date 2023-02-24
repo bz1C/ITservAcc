@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="c0cf70cc-833b-410b-b0ca-23c6473a9d17" extendedConfigurationObject="82f7cfff-d9c7-47a5-91c8-dcdc976b1ae4">
+  <producedTypes>
+    <refType typeId="63db2bc4-2b88-4122-83dc-55723835f4ba" valueTypeId="97c36bbf-0683-4e47-9dcd-27db01b4248f"/>
+    <listType typeId="b0286748-a8a8-4088-8304-f5fec163b335" valueTypeId="106f343a-20bc-4290-95de-88f9298e0457"/>
+    <managerType typeId="78892734-1e0a-49c8-a668-1333da7327da" valueTypeId="f26889bd-c670-49ad-acb1-02df3c52714d"/>
+  </producedTypes>
+  <name>Периодичность</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:EnumExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <managerModule>Extended</managerModule>
+  </extension>
+  <enumValues uuid="b69dd94c-1c2a-4333-9b82-531affc404e3" extendedConfigurationObject="35a97566-09b7-432f-85ff-4d56244ade1f">
+    <name>Месяц</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </enumValues>
+</mdclass:Enum>

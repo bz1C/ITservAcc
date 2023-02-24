@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="58401168-e802-40fd-9ffe-bd1d3db0e8fb" extendedConfigurationObject="6614e301-2e22-422c-9013-50935ac29e28">
+  <producedTypes>
+    <objectType typeId="9882a16c-cb6b-44e3-b2c6-3ba3f46c0bb4" valueTypeId="fb4d69d0-dbeb-4d0f-8ebc-63a44c2a3397"/>
+    <managerType typeId="3918a718-40ee-49b0-9b63-8f5c55b71688" valueTypeId="b511d305-b000-4d38-aa2b-7a6a73d45b0b"/>
+  </producedTypes>
+  <name>КорректировкаДвижений</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DataProcessorExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <forms uuid="c519269c-f97e-4f4b-b77d-6ad4cc6a44bc" extendedConfigurationObject="e352ec74-e566-415c-bfa0-e68cfacb5fd5">
+    <name>ОсновнаяФорма</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+</mdclass:DataProcessor>

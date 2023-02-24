@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="07431e24-011b-41a7-9031-c7f8099ed8f4">
+  <producedTypes>
+    <objectType typeId="6236111b-3345-449f-ad6a-0126d3866b48" valueTypeId="6bfd53ca-6889-4b6a-b069-81e041f398bd"/>
+    <managerType typeId="f44e43fc-a3f3-461e-b158-91a5a283aa87" valueTypeId="242d5aab-b7dd-4ad7-a5f0-ac82a2b22b1f"/>
+  </producedTypes>
+  <name>НормыВыработки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль нормы отработанного времени</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.НормыВыработки.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="04c60441-9d27-466a-b714-402ba6ae0655">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c7a050a3-f236-42ae-a093-95df34cbc4d7">
+  <producedTypes>
+    <objectType typeId="f5b6b30f-8520-41ec-916b-af7488d3ee8f" valueTypeId="483ec418-1ecd-41f2-be06-5fdf50eb9ef4"/>
+    <refType typeId="9c7663f1-bbdd-42e8-b959-8d84e5ed8a5c" valueTypeId="99a3b2c3-9169-41e6-aee0-d70619a1cd8c"/>
+    <selectionType typeId="fe5e4b94-aaa6-4f0f-9000-784004c72b2a" valueTypeId="e7e2aaf7-561c-46e7-9e67-85a272f92807"/>
+    <listType typeId="2ec10854-6dde-4037-a7f4-bfa8a8c90c73" valueTypeId="bbae7aba-a61a-4ed2-b8af-051ca52e5945"/>
+    <managerType typeId="edf3a07d-ad79-45dc-8b05-55f737e909af" valueTypeId="029920ee-f013-4882-af4c-1b30ba32cdbd"/>
+  </producedTypes>
+  <name>bz_Проекты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проекты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.bz_Проекты.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.bz_Проекты.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="43a1536a-463a-4244-a5ad-91940f284f38">
+    <name>КонтрагентКонечный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конечный заказчик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e45d6f51-31d3-4990-9d2d-dc73c84e85b9">
+    <name>КонтрагентРаботодатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Непосредственный заказчик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="45fc35f6-c09a-40c2-b397-125c33a98fc8">
+    <name>Менеджер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Менеджер</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0a1d60c2-d896-4d53-9f0c-d44765fe0e25">
+    <name>ПериодичнеостьАктирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Периодичнеость актирования (по умолчанию)</value>
+    </synonym>
+    <type>
+      <types>EnumRef.Периодичность</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

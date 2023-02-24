@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6f6d0012-0ec4-49b6-b9a5-f763dd0390c5">
+  <producedTypes>
+    <refType typeId="5e28ab16-119e-4e9f-9a75-e37bc7b9dc8f" valueTypeId="0a039888-220a-4cba-acea-e9db5b3a164b"/>
+    <listType typeId="b228dff1-75c5-4f2b-aff9-296516eeade0" valueTypeId="a64294b7-f04e-4efc-b8af-a0b52ed616da"/>
+    <managerType typeId="718e7982-c2cf-4473-92f6-4667b7245310" valueTypeId="b65b03bc-d454-4b73-97ad-df9c1c5eda85"/>
+  </producedTypes>
+  <name>bz_ВариантыВыставленияОтработанногоВремени</name>
+  <synonym>
+    <key>ru</key>
+    <value>Варианты выставления отработанного времени</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="6d23235b-6167-4897-af18-f71e53d21f0e">
+    <name>Выставить</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выставить</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e2556d01-bcc4-425a-a2ac-264f82b4911c">
+    <name>ОтложитьТолькоКоличество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отложить (перенести только количество)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3a1edb69-6e30-47e0-869e-e763f8199dcd">
+    <name>ОтложитьССуммой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отложить (рассчитать сумму сейчас)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f007fb08-b047-4a58-a1d3-30874c3b0876">
+    <name>Списать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не выставлять (списать)</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
