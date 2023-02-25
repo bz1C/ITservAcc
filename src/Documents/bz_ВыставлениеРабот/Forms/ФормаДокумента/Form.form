@@ -683,6 +683,13 @@
           <userVisible>
             <common>true</common>
           </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.Выработка.Проект</segments>
+          </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>ТекущаяВыработкаПриИзмененииРеквизитовИзВыполненияРабот</name>
+          </handlers>
           <extendedTooltip>
             <name>ТекущаяВыработкаПроектРасширеннаяПодсказка</name>
             <id>83</id>
@@ -710,56 +717,6 @@
           </contextMenu>
           <type>InputField</type>
           <editMode>EnterOnInput</editMode>
-          <showInHeader>true</showInHeader>
-          <headerHorizontalAlign>Left</headerHorizontalAlign>
-          <showInFooter>true</showInFooter>
-          <extInfo xsi:type="form:InputFieldExtInfo">
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <wrap>true</wrap>
-            <chooseType>true</chooseType>
-            <typeDomainEnabled>true</typeDomainEnabled>
-            <textEdit>true</textEdit>
-          </extInfo>
-        </items>
-        <items xsi:type="form:FormField">
-          <name>ТекущаяВыработкаПроект1</name>
-          <id>178</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>Объект.Выработка.Проект</segments>
-          </dataPath>
-          <extendedTooltip>
-            <name>ТекущаяВыработкаПроект1РасширеннаяПодсказка</name>
-            <id>180</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <contextMenu>
-            <name>ТекущаяВыработкаПроект1КонтекстноеМеню</name>
-            <id>179</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <autoFill>true</autoFill>
-          </contextMenu>
-          <type>InputField</type>
-          <editMode>Enter</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -993,7 +950,9 @@
           <id>99</id>
           <visible>true</visible>
           <enabled>true</enabled>
-          <userVisible/>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
           <dataPath xsi:type="form:DataPath">
             <segments>Объект.Выработка.Сумма</segments>
           </dataPath>
@@ -1153,12 +1112,14 @@
           <id>141</id>
           <visible>true</visible>
           <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
+          <userVisible/>
           <dataPath xsi:type="form:DataPath">
             <segments>Объект.Выработка.ПВР</segments>
           </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>ТекущаяВыработкаПриИзмененииРеквизитовИзВыполненияРабот</name>
+          </handlers>
           <extendedTooltip>
             <name>ТекущаяВыработкаПВРРасширеннаяПодсказка</name>
             <id>143</id>
@@ -1209,6 +1170,10 @@
           <dataPath xsi:type="form:DataPath">
             <segments>Объект.Выработка.Содержание</segments>
           </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>ТекущаяВыработкаСодержаниеПриИзменении</name>
+          </handlers>
           <extendedTooltip>
             <name>ТекущаяВыработкаСодержаниеРасширеннаяПодсказка</name>
             <id>146</id>
@@ -1259,6 +1224,10 @@
           <dataPath xsi:type="form:DataPath">
             <segments>Объект.Выработка.Примечание</segments>
           </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>ТекущаяВыработкаПримечаниеПриИзменении</name>
+          </handlers>
           <extendedTooltip>
             <name>ТекущаяВыработкаПримечаниеРасширеннаяПодсказка</name>
             <id>149</id>
@@ -1309,6 +1278,10 @@
           <dataPath xsi:type="form:DataPath">
             <segments>Объект.Выработка.Сотрудник</segments>
           </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>ТекущаяВыработкаПриИзмененииРеквизитовИзВыполненияРабот</name>
+          </handlers>
           <extendedTooltip>
             <name>ТекущаяВыработкаСотрудникРасширеннаяПодсказка</name>
             <id>152</id>
@@ -1490,6 +1463,40 @@
             <placementArea>UserCmds</placementArea>
             <representationInContextMenu>Auto</representationInContextMenu>
           </items>
+          <items xsi:type="form:Button">
+            <name>ТекущаяВыработкаЗаполнитьВыбранныеТекущейСтавкой</name>
+            <id>181</id>
+            <title>
+              <key>ru</key>
+              <value>Заполнить ставку</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>ТекущаяВыработкаЗаполнитьВыбранныеТекущейСтавкойРасширеннаяПодсказка</name>
+              <id>182</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <commandName>Form.Command.ЗаполнитьВыбранныеТекущейСтавкой</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -1501,6 +1508,10 @@
         <handlers>
           <event>OnStartEdit</event>
           <name>ТекущаяВыработкаПриНачалеРедактирования</name>
+        </handlers>
+        <handlers>
+          <event>OnActivateRow</event>
+          <name>ТекущаяВыработкаПриАктивизацииСтроки</name>
         </handlers>
         <searchStringAddition>
           <visible>true</visible>
@@ -1716,8 +1727,6 @@
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
           <extInfo xsi:type="form:InputFieldExtInfo">
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
             <horizontalStretch>true</horizontalStretch>
             <wrap>true</wrap>
             <multiLine>true</multiLine>
@@ -1767,15 +1776,13 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <horizontalAlign>Right</horizontalAlign>
-          <groupHorizontalAlign>Left</groupHorizontalAlign>
+          <horizontalAlign>Left</horizontalAlign>
+          <groupHorizontalAlign>Right</groupHorizontalAlign>
           <editMode>Enter</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
           <extInfo xsi:type="form:InputFieldExtInfo">
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
             <horizontalStretch>true</horizontalStretch>
             <wrap>true</wrap>
             <multiLine>true</multiLine>
@@ -1791,7 +1798,7 @@
         </userVisible>
         <title>
           <key>ru</key>
-          <value>Показать детали строки</value>
+          <value>Скрыть детали строки</value>
         </title>
         <horizontalStretch>true</horizontalStretch>
         <extendedTooltip>
@@ -1815,7 +1822,7 @@
           <behavior>Collapsible</behavior>
           <collapsedRepresentationTitle>
             <key>ru</key>
-            <value>Скрыть детали строки</value>
+            <value>Показать детали строки</value>
           </collapsedRepresentationTitle>
           <collapsed>true</collapsed>
           <representation>WeakSeparation</representation>
@@ -1900,6 +1907,10 @@
     <horizontalAlign>Left</horizontalAlign>
     <autoFill>true</autoFill>
   </autoCommandBar>
+  <handlers>
+    <event>OnOpen</event>
+    <name>ПриОткрытии</name>
+  </handlers>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
   <group>Vertical</group>
@@ -1950,6 +1961,32 @@
         <name>Заполнить</name>
       </handler>
     </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ЗаполнитьВыбранныеТекущейСтавкой</name>
+    <title>
+      <key>ru</key>
+      <value>Заполнить выбранные текущей ставкой</value>
+    </title>
+    <id>2</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Заполнить ставку и пересчитать сумму в выбранных строках на дату документа</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.РассчитатьЗарплатуИЗаполнить</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ЗаполнитьВыбранныеТекущейСтавкой</name>
+      </handler>
+    </action>
+    <representation>TextPicture</representation>
+    <modifiesStoredData>true</modifiesStoredData>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <commandInterface>

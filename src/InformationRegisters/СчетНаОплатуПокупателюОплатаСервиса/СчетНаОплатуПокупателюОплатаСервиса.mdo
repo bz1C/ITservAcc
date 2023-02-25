@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="a26d3b74-4a8a-435b-8192-48464028db21" extendedConfigurationObject="6d5da90a-9ed2-49d7-a417-09d2f9465212">
+  <producedTypes>
+    <selectionType typeId="6413e5ae-29a7-4bc5-bb18-32f2e82816d9" valueTypeId="61c7ca72-c1e0-4567-9842-016e65508405"/>
+    <listType typeId="821c79ee-dbe6-4b42-b78a-93ef98b92a05" valueTypeId="edf2718a-fe1e-48d2-99b8-c26a544e6475"/>
+    <managerType typeId="995c065f-9835-4de2-87b3-753b9f6ed7ca" valueTypeId="3dc4fa32-fdf7-428b-afd8-bf74eff0a378"/>
+    <recordSetType typeId="9a2d68ab-23cb-411c-a9a3-2c0d017ab85b" valueTypeId="a09c26d0-cecd-43e6-a172-cc8d99c762cc"/>
+    <recordKeyType typeId="302d989d-4254-4338-8a69-fe75c6202893" valueTypeId="866283f4-447a-4928-b4d6-2466ccec4987"/>
+    <recordType typeId="0d261198-8cf1-47e6-aa55-9dce5a3a21dd" valueTypeId="6fa5e5f3-8be8-4a7b-bd58-5d70b62ddb65"/>
+    <recordManagerType typeId="113480aa-d2e3-4531-8e17-8e7b2d4914c0" valueTypeId="5e078615-075d-425d-88a0-d407d359a2f0"/>
+  </producedTypes>
+  <name>СчетНаОплатуПокупателюОплатаСервиса</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:InformationRegisterExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <informationRegisterPeriodicity>Checked</informationRegisterPeriodicity>
+    <writeMode>Checked</writeMode>
+  </extension>
+  <commands uuid="56c87bfd-0272-4003-912e-60881d24624a" extendedConfigurationObject="fbcda2a3-9d67-4ef3-b764-4ce1172dbf39">
+    <name>Биллинг</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicCommandExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <group>Checked</group>
+    </extension>
+    <group>FormNavigationPanelSeeAlso</group>
+  </commands>
+</mdclass:InformationRegister>

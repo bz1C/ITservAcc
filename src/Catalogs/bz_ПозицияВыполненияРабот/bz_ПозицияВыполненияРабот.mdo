@@ -18,8 +18,10 @@
   <fullTextSearch>Use</fullTextSearch>
   <levelCount>2</levelCount>
   <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
   <codeAllowedLength>Variable</codeAllowedLength>
-  <defaultPresentation>AsDescription</defaultPresentation>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
   <attributes uuid="8e93f48d-428b-4acc-bf86-3a9e031bd57a">
@@ -30,6 +32,7 @@
     </synonym>
     <type>
       <types>DocumentRef.bz_ВыполнениеРабот</types>
+      <types>DocumentRef.bz_ВыставлениеРабот</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

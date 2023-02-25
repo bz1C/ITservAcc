@@ -11,7 +11,7 @@
   <name>bz_СписанныеТрудозатраты</name>
   <synonym>
     <key>ru</key>
-    <value>СписанныеТрудозатраты</value>
+    <value>Списанные трудозатраты</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <registerType>Turnovers</registerType>

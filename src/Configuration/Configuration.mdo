@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="0ec25f43-51b1-4491-985f-5035837d6f7f">
   <name>bzУУ</name>
-  <synonym>
-    <key>ru</key>
-    <value>Управленческий учет</value>
-  </synonym>
   <objectBelonging>Adopted</objectBelonging>
   <extension xsi:type="mdclassExtension:ConfigurationExtension">
     <defaultRunMode>Checked</defaultRunMode>
@@ -30,7 +26,6 @@
   <defaultRoles>Role.bz_ОсновнаяРоль</defaultRoles>
   <defaultLanguage>Language.Русский</defaultLanguage>
   <interfaceCompatibilityMode>TaxiEnableVersion8_2</interfaceCompatibilityMode>
-  <compatibilityMode>8.3.22</compatibilityMode>
   <languages uuid="ea9d4cde-74d4-42bc-872b-04aaa914a88d" extendedConfigurationObject="db4a9ccb-9ef5-4b3c-8577-b6fe5db1b62e">
     <name>Русский</name>
     <objectBelonging>Adopted</objectBelonging>
@@ -53,12 +48,21 @@
   <commonPictures>CommonPicture.АктивностьПоРН</commonPictures>
   <commonPictures>CommonPicture.ЖурналПроводок</commonPictures>
   <commonPictures>CommonPicture.СостоянияДокумента</commonPictures>
-  <commonPictures>CommonPicture.ЗаполнитьФорму</commonPictures>
   <commonPictures>CommonPicture.Отчеты</commonPictures>
   <commonPictures>CommonPicture.СтрелкаВправо</commonPictures>
   <commonPictures>CommonPicture.ОчиститьЗначение</commonPictures>
+  <commonPictures>CommonPicture.РассчитатьЗарплатуИЗаполнить</commonPictures>
+  <commonPictures>CommonPicture.ПодсказкаНаПанели</commonPictures>
+  <commonPictures>CommonPicture.Видеоинструкция</commonPictures>
+  <commonPictures>CommonPicture.Пустая</commonPictures>
   <roles>Role.bz_ОсновнаяРоль</roles>
+  <commonModules>CommonModule.bz_ОбщиеАлгоритмыУУ</commonModules>
   <commonCommands>CommonCommand.ПоказатьДвиженияДокументаРасш</commonCommands>
+  <commonCommands>CommonCommand.ОтправитьПоЭлектроннойПочте</commonCommands>
+  <commonCommands>CommonCommand.СвязанныеДокументы</commonCommands>
+  <commonCommands>CommonCommand.ПрисоединенныеФайлыБП</commonCommands>
+  <commonCommands>CommonCommand.ДополнительныеСведенияКоманднаяПанель</commonCommands>
+  <commonCommands>CommonCommand.ИсторияИзменений</commonCommands>
   <catalogs>Catalog.bz_Проекты</catalogs>
   <catalogs>Catalog.bz_Работы</catalogs>
   <catalogs>Catalog.Контрагенты</catalogs>
@@ -93,6 +97,7 @@
   <informationRegisters>InformationRegister.bz_СостоянияЗакрытияПериодов</informationRegisters>
   <informationRegisters>InformationRegister.ДанныеПроизводственногоКалендаря</informationRegisters>
   <informationRegisters>InformationRegister.bz_ПочасовыеСтавкиРабот</informationRegisters>
+  <informationRegisters>InformationRegister.СчетНаОплатуПокупателюОплатаСервиса</informationRegisters>
   <accumulationRegisters>AccumulationRegister.bz_Выработка</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.bz_РаботыКВыставлению</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.bz_СписанныеТрудозатраты</accumulationRegisters>

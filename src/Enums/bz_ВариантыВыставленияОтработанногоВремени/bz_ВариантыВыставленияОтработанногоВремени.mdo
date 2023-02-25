@@ -40,4 +40,11 @@
       <value>Не выставлять (списать)</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="9ec38339-353a-4bc0-8fae-1fe53cd93f04">
+    <name>ВыставитьБезВыработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выставить (без выработки)</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>
