@@ -55,6 +55,7 @@
   <commonPictures>CommonPicture.ПодсказкаНаПанели</commonPictures>
   <commonPictures>CommonPicture.Видеоинструкция</commonPictures>
   <commonPictures>CommonPicture.Пустая</commonPictures>
+  <commonPictures>CommonPicture.ЗаполнитьФорму</commonPictures>
   <roles>Role.bz_ОсновнаяРоль</roles>
   <commonModules>CommonModule.bz_ОбщиеАлгоритмыУУ</commonModules>
   <commonCommands>CommonCommand.ПоказатьДвиженияДокументаРасш</commonCommands>
