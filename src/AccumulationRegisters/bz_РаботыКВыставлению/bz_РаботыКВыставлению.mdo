@@ -11,7 +11,7 @@
   <name>bz_РаботыКВыставлению</name>
   <synonym>
     <key>ru</key>
-    <value>Выставленные работы</value>
+    <value>Работы к выставлению</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <dataLockControlMode>Managed</dataLockControlMode>

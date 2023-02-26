@@ -19,4 +19,5 @@
   <content>InformationRegister.bz_ПочасовыеСтавкиРабот</content>
   <content>Report.ВыставленныеРаботы</content>
   <content>Catalog.bz_ПричиныСписанияТрудозатрат</content>
+  <content>Document.СчетНаОплатуПокупателю</content>
 </mdclass:Subsystem>

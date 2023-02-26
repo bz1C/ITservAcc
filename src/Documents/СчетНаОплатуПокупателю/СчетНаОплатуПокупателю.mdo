@@ -207,6 +207,24 @@
       </typeExtension>
     </extension>
   </attributes>
+  <attributes uuid="f143bf39-efa5-47ef-870a-070f87c70b14" extendedConfigurationObject="ea61a478-a96b-4411-9ac1-71d41b80dbb1">
+    <name>СуммаДокумента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+  </attributes>
   <forms uuid="1b25796c-38f0-4faf-ab0f-418ab905e5a5" extendedConfigurationObject="75aa3372-5239-435b-92b5-6c46d6cf48ec">
     <name>ФормаДокумента</name>
     <objectBelonging>Adopted</objectBelonging>
