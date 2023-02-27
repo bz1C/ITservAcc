@@ -20,4 +20,5 @@
   <content>Report.ВыставленныеРаботы</content>
   <content>Catalog.bz_ПричиныСписанияТрудозатрат</content>
   <content>Document.СчетНаОплатуПокупателю</content>
+  <content>Report.Выработка</content>
 </mdclass:Subsystem>

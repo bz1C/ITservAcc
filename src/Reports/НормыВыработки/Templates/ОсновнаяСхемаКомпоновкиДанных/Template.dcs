@@ -5,137 +5,6 @@
 		<dataSourceType>Local</dataSourceType>
 	</dataSource>
 	<dataSet xsi:type="DataSetQuery">
-		<name>Запрос</name>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Этап</dataPath>
-			<field>Этап</field>
-			<role>
-				<dcscom:dimension>true</dcscom:dimension>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Организация</dataPath>
-			<field>Организация</field>
-			<role>
-				<dcscom:dimension>true</dcscom:dimension>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Проект</dataPath>
-			<field>Проект</field>
-			<role>
-				<dcscom:dimension>true</dcscom:dimension>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Работа</dataPath>
-			<field>Работа</field>
-			<role>
-				<dcscom:dimension>true</dcscom:dimension>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Сотрудник</dataPath>
-			<field>Сотрудник</field>
-			<role>
-				<dcscom:dimension>true</dcscom:dimension>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Регистратор</dataPath>
-			<field>Регистратор</field>
-			<role>
-				<dcscom:periodNumber>1</dcscom:periodNumber>
-				<dcscom:periodType>Main</dcscom:periodType>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ТрудозатратыЧД</dataPath>
-			<field>ТрудозатратыЧД</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Трудозатраты ЧД</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ТрудозатратыМД</dataPath>
-			<field>ТрудозатратыМД</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Трудозатраты МД</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Период</dataPath>
-			<field>Период</field>
-			<role>
-				<dcscom:periodNumber>2</dcscom:periodNumber>
-				<dcscom:periodType>Main</dcscom:periodType>
-				<dcscom:dimension>true</dcscom:dimension>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ВидДня</dataPath>
-			<field>ВидДня</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ТрудозатратыВМинутах</dataPath>
-			<field>ТрудозатратыВМинутах</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Трудозатраты (мин)</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ТрудозатратыВЧасах</dataPath>
-			<field>ТрудозатратыВЧасах</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Трудозатраты (ч)</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Дата</dataPath>
-			<field>Дата</field>
-			<useRestriction>
-				<condition>true</condition>
-			</useRestriction>
-		</field>
-		<dataSource>ИсточникДанных1</dataSource>
-		<query>ВЫБРАТЬ
-	bz_ВыработкаОбороты.Организация КАК Организация,
-	bz_ВыработкаОбороты.Проект КАК Проект,
-	bz_ВыработкаОбороты.Этап КАК Этап,
-	bz_ВыработкаОбороты.Работа КАК Работа,
-	bz_ВыработкаОбороты.Сотрудник КАК Сотрудник,
-	bz_ВыработкаОбороты.ТрудозатратыЧДОборот КАК ТрудозатратыЧД,
-	bz_ВыработкаОбороты.ТрудозатратыМДОборот КАК ТрудозатратыМД,
-	ЕСТЬNULL(bz_ВыработкаОбороты.ТрудозатратыОборот,0) КАК ТрудозатратыВЧасах,
-	ЕСТЬNULL(bz_ВыработкаОбороты.ТрудозатратыМинутыОборот,0) КАК ТрудозатратыВМинутах,
-	bz_ВыработкаОбороты.Регистратор КАК Регистратор,
-	ЕСТЬNULL(bz_ВыработкаОбороты.Период, ДПК.Дата) КАК Период,
-	ДПК.ВидДня КАК ВидДня
-ИЗ
-	РегистрНакопления.bz_Выработка.Обороты(&amp;НачалоПериода, &amp;КонецПериода, Регистратор, ) КАК bz_ВыработкаОбороты
-		ПОЛНОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
-			Т.Дата КАК Дата,
-			Т.ВидДня КАК ВидДня
-		ИЗ
-			РегистрСведений.ДанныеПроизводственногоКалендаря КАК Т
-		ГДЕ
-			Т.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
-			И Т.ПроизводственныйКалендарь = &amp;ПроизводственныйКалендарь) КАК ДПК
-		ПО (НАЧАЛОПЕРИОДА(bz_ВыработкаОбороты.Период, ДЕНЬ) = ДПК.Дата)</query>
-	</dataSet>
-	<dataSet xsi:type="DataSetQuery">
 		<name>НаборДанных1</name>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Норма</dataPath>
@@ -157,10 +26,6 @@
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Проект</dataPath>
 			<field>Проект</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Организация</dataPath>
-			<field>Организация</field>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ВидДня</dataPath>
@@ -207,14 +72,6 @@
 				</v8:item>
 			</title>
 		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Этап</dataPath>
-			<field>Этап</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Работа</dataPath>
-			<field>Работа</field>
-		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	СотрудникиЗаПериод.Сотрудник КАК Сотрудник,
@@ -235,9 +92,11 @@
 	РегистрСведений.ДанныеПроизводственногоКалендаря КАК Т,
 	(ВЫБРАТЬ
 		bz_ВыработкаОбороты.Сотрудник КАК Сотрудник,
-		bz_ВыработкаОбороты.ТрудозатратыОборот КАК ТрудозатратыОборот
+		bz_ВыработкаОбороты.Трудозатраты КАК ТрудозатратыОборот
 	ИЗ
-		РегистрНакопления.bz_Выработка.Обороты(&amp;НачалоПериода, &amp;КонецПериода, , ) КАК bz_ВыработкаОбороты) КАК СотрудникиЗаПериод
+		РегистрНакопления.bz_Выработка КАК bz_ВыработкаОбороты
+	ГДЕ bz_ВыработкаОбороты.Период МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И bz_ВыработкаОбороты.Активность) КАК СотрудникиЗаПериод
 ГДЕ
 	Т.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
 	И Т.ПроизводственныйКалендарь = &amp;ПроизводственныйКалендарь
@@ -246,14 +105,16 @@
 
 ВЫБРАТЬ
 	bz_ВыработкаОбороты.Сотрудник,
-	bz_ВыработкаОбороты.Период,
+	НАЧАЛОПЕРИОДА(bz_ВыработкаОбороты.Период, ДЕНЬ) КАК Период,
 	NULL,
 	0,
-	bz_ВыработкаОбороты.ТрудозатратыОборот,
+	bz_ВыработкаОбороты.Трудозатраты,
 	0,
 	0
 ИЗ
-	РегистрНакопления.bz_Выработка.Обороты(&amp;НачалоПериода, &amp;КонецПериода, День, ) КАК bz_ВыработкаОбороты
+	РегистрНакопления.bz_Выработка КАК bz_ВыработкаОбороты
+ГДЕ bz_ВыработкаОбороты.Период МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+		И bz_ВыработкаОбороты.Активность
 
 ОБЪЕДИНИТЬ ВСЕ
 
@@ -267,14 +128,15 @@
 	МАКСИМУМ(ВыработкаПоПроектам.ТрудозатратыОборот)
 ИЗ
 	(ВЫБРАТЬ
-		bz_ВыработкаОбороты.Период КАК Период,
+		НАЧАЛОПЕРИОДА(bz_ВыработкаОбороты.Период, ДЕНЬ) КАК Период,
 		bz_ВыработкаОбороты.Проект КАК Проект,
-		bz_ВыработкаОбороты.ТрудозатратыОборот КАК ТрудозатратыОборот,
+		bz_ВыработкаОбороты.Трудозатраты КАК ТрудозатратыОборот,
 		bz_ВыработкаОбороты.Сотрудник КАК Сотрудник
 	ИЗ
-		РегистрНакопления.bz_Выработка.Обороты(&amp;НачалоПериода, &amp;КонецПериода, День, ) КАК bz_ВыработкаОбороты
-	ГДЕ
-		bz_ВыработкаОбороты.ТрудозатратыОборот &lt;&gt; 0) КАК ВыработкаПоПроектам
+		РегистрНакопления.bz_Выработка КАК bz_ВыработкаОбороты
+	ГДЕ bz_ВыработкаОбороты.Период МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+		И bz_ВыработкаОбороты.Активность
+		И bz_ВыработкаОбороты.Трудозатраты &lt;&gt; 0) КАК ВыработкаПоПроектам
 
 СГРУППИРОВАТЬ ПО
 	ВыработкаПоПроектам.Сотрудник,
@@ -575,7 +437,7 @@
 					<dcsset:field>ВидДня</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ТрудозатратыВЧасах</dcsset:field>
+					<dcsset:field>ТрудозатратыЧасов</dcsset:field>
 					<dcsset:lwsTitle>
 						<v8:item>
 							<v8:lang>ru</v8:lang>

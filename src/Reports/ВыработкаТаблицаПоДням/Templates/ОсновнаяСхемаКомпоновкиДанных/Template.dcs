@@ -50,26 +50,6 @@
 			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ТрудозатратыЧД</dataPath>
-			<field>ТрудозатратыЧД</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Трудозатраты ЧД</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ТрудозатратыМД</dataPath>
-			<field>ТрудозатратыМД</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Трудозатраты МД</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>Период</dataPath>
 			<field>Период</field>
 			<role>
@@ -83,14 +63,19 @@
 			<field>ВидДня</field>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ТрудозатратыВМинутах</dataPath>
-			<field>ТрудозатратыВМинутах</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Трудозатраты (мин)</v8:content>
-				</v8:item>
-			</title>
+			<dataPath>Дата</dataPath>
+			<field>Дата</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТрудозатратыЧД</dataPath>
+			<field>ТрудозатратыЧД</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТрудозатратыМД</dataPath>
+			<field>ТрудозатратыМД</field>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ТрудозатратыВЧасах</dataPath>
@@ -98,16 +83,19 @@
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Трудозатраты (ч)</v8:content>
+					<v8:content>Трудозатраты в часах</v8:content>
 				</v8:item>
 			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>Дата</dataPath>
-			<field>Дата</field>
-			<useRestriction>
-				<condition>true</condition>
-			</useRestriction>
+			<dataPath>ТрудозатратыВМинутах</dataPath>
+			<field>ТрудозатратыВМинутах</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Трудозатраты в минутах</v8:content>
+				</v8:item>
+			</title>
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
@@ -116,15 +104,15 @@
 	bz_ВыработкаОбороты.Этап КАК Этап,
 	bz_ВыработкаОбороты.Работа КАК Работа,
 	bz_ВыработкаОбороты.Сотрудник КАК Сотрудник,
-	bz_ВыработкаОбороты.ТрудозатратыЧДОборот КАК ТрудозатратыЧД,
-	bz_ВыработкаОбороты.ТрудозатратыМДОборот КАК ТрудозатратыМД,
-	ЕСТЬNULL(bz_ВыработкаОбороты.ТрудозатратыОборот,0) КАК ТрудозатратыВЧасах,
-	ЕСТЬNULL(bz_ВыработкаОбороты.ТрудозатратыМинутыОборот,0) КАК ТрудозатратыВМинутах,
+	bz_ВыработкаОбороты.ТрудозатратыЧД КАК ТрудозатратыЧД,
+	bz_ВыработкаОбороты.ТрудозатратыМД КАК ТрудозатратыМД,
+	ЕСТЬNULL(bz_ВыработкаОбороты.Трудозатраты,0) КАК ТрудозатратыВЧасах,
+	ЕСТЬNULL(bz_ВыработкаОбороты.ТрудозатратыМинуты,0) КАК ТрудозатратыВМинутах,
 	bz_ВыработкаОбороты.Регистратор КАК Регистратор,
 	ЕСТЬNULL(bz_ВыработкаОбороты.Период, ДПК.Дата) КАК Период,
 	ДПК.ВидДня КАК ВидДня
 ИЗ
-	РегистрНакопления.bz_Выработка.Обороты(&amp;НачалоПериода, &amp;КонецПериода, Регистратор, ) КАК bz_ВыработкаОбороты
+	РегистрНакопления.bz_Выработка КАК bz_ВыработкаОбороты
 		ПОЛНОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
 			Т.Дата КАК Дата,
 			Т.ВидДня КАК ВидДня
@@ -133,7 +121,10 @@
 		ГДЕ
 			Т.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
 			И Т.ПроизводственныйКалендарь = &amp;ПроизводственныйКалендарь) КАК ДПК
-		ПО (НАЧАЛОПЕРИОДА(bz_ВыработкаОбороты.Период, ДЕНЬ) = ДПК.Дата)</query>
+		ПО (НАЧАЛОПЕРИОДА(bz_ВыработкаОбороты.Период, ДЕНЬ) = ДПК.Дата)
+ГДЕ
+	bz_ВыработкаОбороты.Период МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И bz_ВыработкаОбороты.Активность	</query>
 	</dataSet>
 	<calculatedField>
 		<dataPath>ТрудозатратыЧасов</dataPath>
@@ -320,14 +311,6 @@
 	<totalField>
 		<dataPath>ТрудозатратыЧасов</dataPath>
 		<expression>Цел(Сумма(ТрудозатратыВМинутах)/60)</expression>
-	</totalField>
-	<totalField>
-		<dataPath>ТрудозатратыВМинутах</dataPath>
-		<expression>Сумма(ТрудозатратыВМинутах)</expression>
-	</totalField>
-	<totalField>
-		<dataPath>ТрудозатратыВЧасах</dataPath>
-		<expression>Сумма(ТрудозатратыВЧасах)</expression>
 	</totalField>
 	<totalField>
 		<dataPath>ВидДня</dataPath>
