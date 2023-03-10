@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9a57f929-09c3-474a-9757-7f45b990be7d">
+  <producedTypes>
+    <objectType typeId="8e4c59a1-cb9c-4849-b9dd-9252015b94f4" valueTypeId="2fe7633f-cad5-4439-b451-d8aafbb04b49"/>
+    <managerType typeId="95311b59-f287-426d-8063-5210545c037c" valueTypeId="60327f17-c424-4452-99c9-8049cb502e7c"/>
+  </producedTypes>
+  <name>bz_КонтрольНормыВыработки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль нормы выработки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.bz_КонтрольНормыВыработки.Form.Форма</defaultForm>
+  <attributes uuid="fc25935f-05cb-4193-a877-8db37d48214a">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9c7ac495-d9ec-4ade-9514-fc84909a2e35">
+    <name>Дата1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата1</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6efea089-b055-42d3-b959-46c0a726863b">
+    <name>Дата2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата2</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="779d4ea2-1b50-4fdc-a55b-4531986a8362">
+    <name>Группировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группировка</value>
+    </synonym>
+    <type>
+      <types>ValueList</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="de3c9670-2db9-41b9-98f5-607cc8457d7c">
+    <name>ПоказыватьПревышение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показывать превышение</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1331260f-6499-4e66-970e-6e8eaf921c70">
+    <name>ПоказыватьНехватку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показывать нехватку</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="6308c34e-a9db-4952-a4df-46f7f9eeff7b">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="cacc1885-4d8d-4f7e-baa2-41e45406a6fa">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>
