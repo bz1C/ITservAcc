@@ -120,6 +120,12 @@
 				<dcscom:periodNumber>1</dcscom:periodNumber>
 				<dcscom:periodType>Main</dcscom:periodType>
 			</role>
+			<valueType>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</valueType>
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
@@ -137,7 +143,7 @@
 	Выставлено.Примечание КАК Примечание,
 	ЕСТЬNULL(Выставлено.Проект.Менеджер, ЗНАЧЕНИЕ(Справочник.ФизическиеЛица.ПустаяСсылка)) КАК Менеджер,
 	ЕСТЬNULL(Выставлено.Проект.КонтрагентРаботодатель, ЗНАЧЕНИЕ(Справочник.Контрагенты.ПустаяСсылка)) КАК КонтрагентРаботодатель,
-	Выставлено.Период КАК Дата
+	Выставлено.ФактическаяДатаВыработки КАК Дата
 ИЗ
 	РегистрНакопления.bz_Выработка КАК Выставлено
 ГДЕ 
@@ -377,10 +383,21 @@
 						</dcsset:order>
 						<dcsset:selection>
 							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Дата</dcsset:field>
+							</dcsset:item>
 						</dcsset:selection>
 						<dcsset:item xsi:type="dcsset:StructureItemGroup">
 							<dcsset:order>
 								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+								<dcsset:item xsi:type="dcsset:OrderItemField">
+									<dcsset:field>Проект</dcsset:field>
+									<dcsset:orderType>Asc</dcsset:orderType>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:OrderItemField">
+									<dcsset:field>Этап</dcsset:field>
+									<dcsset:orderType>Asc</dcsset:orderType>
+								</dcsset:item>
 							</dcsset:order>
 							<dcsset:selection>
 								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
@@ -563,6 +580,14 @@
 						<dcsset:item xsi:type="dcsset:StructureItemGroup">
 							<dcsset:order>
 								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+								<dcsset:item xsi:type="dcsset:OrderItemField">
+									<dcsset:field>Проект</dcsset:field>
+									<dcsset:orderType>Asc</dcsset:orderType>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:OrderItemField">
+									<dcsset:field>Этап</dcsset:field>
+									<dcsset:orderType>Asc</dcsset:orderType>
+								</dcsset:item>
 							</dcsset:order>
 							<dcsset:selection>
 								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
@@ -741,11 +766,15 @@
 							<dcsset:order>
 								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
 								<dcsset:item xsi:type="dcsset:OrderItemField">
-									<dcsset:field>Этап</dcsset:field>
+									<dcsset:field>Дата</dcsset:field>
 									<dcsset:orderType>Asc</dcsset:orderType>
 								</dcsset:item>
 								<dcsset:item xsi:type="dcsset:OrderItemField">
-									<dcsset:field>Дата</dcsset:field>
+									<dcsset:field>Проект</dcsset:field>
+									<dcsset:orderType>Asc</dcsset:orderType>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:OrderItemField">
+									<dcsset:field>Этап</dcsset:field>
 									<dcsset:orderType>Asc</dcsset:orderType>
 								</dcsset:item>
 							</dcsset:order>
@@ -978,6 +1007,14 @@
 						<dcsset:item xsi:type="dcsset:StructureItemGroup">
 							<dcsset:order>
 								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+								<dcsset:item xsi:type="dcsset:OrderItemField">
+									<dcsset:field>Проект</dcsset:field>
+									<dcsset:orderType>Asc</dcsset:orderType>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:OrderItemField">
+									<dcsset:field>Этап</dcsset:field>
+									<dcsset:orderType>Asc</dcsset:orderType>
+								</dcsset:item>
 							</dcsset:order>
 							<dcsset:selection>
 								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
@@ -1201,11 +1238,15 @@
 							<dcsset:order>
 								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
 								<dcsset:item xsi:type="dcsset:OrderItemField">
-									<dcsset:field>Этап</dcsset:field>
+									<dcsset:field>Дата</dcsset:field>
 									<dcsset:orderType>Asc</dcsset:orderType>
 								</dcsset:item>
 								<dcsset:item xsi:type="dcsset:OrderItemField">
-									<dcsset:field>Дата</dcsset:field>
+									<dcsset:field>Проект</dcsset:field>
+									<dcsset:orderType>Asc</dcsset:orderType>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:OrderItemField">
+									<dcsset:field>Этап</dcsset:field>
 									<dcsset:orderType>Asc</dcsset:orderType>
 								</dcsset:item>
 							</dcsset:order>
@@ -1409,6 +1450,18 @@
 						<dcsset:item xsi:type="dcsset:StructureItemGroup">
 							<dcsset:order>
 								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+								<dcsset:item xsi:type="dcsset:OrderItemField">
+									<dcsset:field>Проект</dcsset:field>
+									<dcsset:orderType>Asc</dcsset:orderType>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:OrderItemField">
+									<dcsset:field>Этап</dcsset:field>
+									<dcsset:orderType>Asc</dcsset:orderType>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:OrderItemField">
+									<dcsset:field>Документ</dcsset:field>
+									<dcsset:orderType>Asc</dcsset:orderType>
+								</dcsset:item>
 							</dcsset:order>
 							<dcsset:selection>
 								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>

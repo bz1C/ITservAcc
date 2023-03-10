@@ -21,4 +21,5 @@
   <content>Catalog.bz_ПричиныСписанияТрудозатрат</content>
   <content>Document.СчетНаОплатуПокупателю</content>
   <content>Report.Выработка</content>
+  <content>DataProcessor.bz_КонтрольНормыВыработки</content>
 </mdclass:Subsystem>

@@ -154,19 +154,6 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
   </attributes>
-  <attributes uuid="19c9c5bd-f2e2-485c-8965-70a706833f3b">
-    <name>ПВР</name>
-    <synonym>
-      <key>ru</key>
-      <value>ПВР</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.bz_ПозицияВыполненияРабот</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-  </attributes>
   <attributes uuid="88d5370f-b4c6-49c7-b3ea-5908c9f0786b">
     <name>ТрудозатратыЧД</name>
     <synonym>
@@ -272,5 +259,34 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="72976712-6589-485b-97b8-b3953bad720f">
+    <name>ФактическаяДатаВыработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фактическая дата выработки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <dimensions uuid="6bc6c7e1-7f7c-4bd5-9ce5-64b7f18175b7">
+    <name>ПВР</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПВР</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.bz_ПозицияВыполненияРабот</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
   </dimensions>
 </mdclass:AccumulationRegister>

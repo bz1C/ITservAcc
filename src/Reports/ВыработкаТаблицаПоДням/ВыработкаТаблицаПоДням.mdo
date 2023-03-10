@@ -7,7 +7,7 @@
   <name>ВыработкаТаблицаПоДням</name>
   <synonym>
     <key>ru</key>
-    <value>Выработка (таблица по дням)</value>
+    <value>Выработка (таблица по дням) (СТАР)</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <mainDataCompositionSchema>Report.ВыработкаТаблицаПоДням.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
