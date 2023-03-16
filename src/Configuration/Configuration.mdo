@@ -26,6 +26,7 @@
   <defaultRoles>Role.bz_ОсновнаяРоль</defaultRoles>
   <defaultLanguage>Language.Русский</defaultLanguage>
   <interfaceCompatibilityMode>TaxiEnableVersion8_2</interfaceCompatibilityMode>
+  <compatibilityMode>8.3.22</compatibilityMode>
   <languages uuid="ea9d4cde-74d4-42bc-872b-04aaa914a88d" extendedConfigurationObject="db4a9ccb-9ef5-4b3c-8577-b6fe5db1b62e">
     <name>Русский</name>
     <objectBelonging>Adopted</objectBelonging>

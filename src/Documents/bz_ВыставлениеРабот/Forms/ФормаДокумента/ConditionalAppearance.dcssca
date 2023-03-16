@@ -135,7 +135,6 @@
 			<item xsi:type="FilterItemComparison">
 				<left xsi:type="dcscor:Field">Объект.Выработка.Причина</left>
 				<comparisonType>NotFilled</comparisonType>
-				<right xsi:nil="true"/>
 			</item>
 		</filter>
 		<appearance>
@@ -205,6 +204,10 @@
 				<dcscor:value xsi:type="v8ui:Color">web:DarkGray</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Шрифт</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:parameter>Текст</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
@@ -214,16 +217,12 @@
 				</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Шрифт</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
-			</dcscor:item>
-			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Видимость</dcscor:parameter>
-				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 		</appearance>
 		<presentation xsi:type="v8:LocalStringType">
@@ -248,7 +247,6 @@
 			<item xsi:type="FilterItemComparison">
 				<left xsi:type="dcscor:Field">Объект.Выработка.Примечание</left>
 				<comparisonType>NotFilled</comparisonType>
-				<right xsi:nil="true"/>
 			</item>
 		</filter>
 		<appearance>
@@ -287,6 +285,10 @@
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
 				<dcscor:parameter>Доступность</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
@@ -295,10 +297,6 @@
 				<dcscor:use>false</dcscor:use>
 				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
-			</dcscor:item>
-			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Видимость</dcscor:parameter>
-				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:parameter>Отображать</dcscor:parameter>
@@ -335,6 +333,10 @@
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
 				<dcscor:parameter>Доступность</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
@@ -343,10 +345,6 @@
 				<dcscor:use>false</dcscor:use>
 				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
-			</dcscor:item>
-			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Видимость</dcscor:parameter>
-				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:parameter>Отображать</dcscor:parameter>
@@ -375,9 +373,18 @@
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">style:AccentColor</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
 				<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
@@ -391,17 +398,8 @@
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
-				<dcscor:parameter>Видимость</dcscor:parameter>
-				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
-			</dcscor:item>
-			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:use>false</dcscor:use>
 				<dcscor:parameter>Отображать</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
-			</dcscor:item>
-			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>ЦветТекста</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">style:AccentColor</dcscor:value>
 			</dcscor:item>
 		</appearance>
 		<presentation xsi:type="v8:LocalStringType">
@@ -446,18 +444,13 @@
 				</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:use>false</dcscor:use>
-				<dcscor:parameter>Шрифт</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
 				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
 				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
-			</dcscor:item>
-			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>Видимость</dcscor:parameter>
-				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 			</dcscor:item>
 		</appearance>
 		<presentation xsi:type="v8:LocalStringType">

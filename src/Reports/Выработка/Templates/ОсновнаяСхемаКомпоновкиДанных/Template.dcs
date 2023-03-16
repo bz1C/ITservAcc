@@ -221,7 +221,9 @@
 				<v8:DateFractions>DateTime</v8:DateFractions>
 			</v8:DateQualifiers>
 		</valueType>
+		<value xsi:nil="true"/>
 		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаНачала</expression>
 	</parameter>
 	<parameter>
 		<name>КонецПериода</name>
@@ -237,14 +239,16 @@
 				<v8:DateFractions>DateTime</v8:DateFractions>
 			</v8:DateQualifiers>
 		</valueType>
+		<value xsi:nil="true"/>
 		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаОкончания</expression>
 	</parameter>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
 		<dcsset:presentation xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>Выработка за период с расшифровкой</v8:content>
+				<v8:content>Выработка за период Проект/Этап/Сотрудник/Детали, Работодатель/Менеджер/Проект</v8:content>
 			</v8:item>
 		</dcsset:presentation>
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
@@ -318,35 +322,30 @@
 				<dcsset:item xsi:type="dcsset:FilterItemComparison">
 					<dcsset:left xsi:type="dcscor:Field">Организация</dcsset:left>
 					<dcsset:comparisonType>Equal</dcsset:comparisonType>
-					<dcsset:right xsi:nil="true"/>
 					<dcsset:userSettingID>be7868aa-d0cb-4ede-9a1b-5f022c663ea6</dcsset:userSettingID>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:FilterItemComparison">
 					<dcsset:use>false</dcsset:use>
 					<dcsset:left xsi:type="dcscor:Field">Проект</dcsset:left>
 					<dcsset:comparisonType>Equal</dcsset:comparisonType>
-					<dcsset:right xsi:nil="true"/>
 					<dcsset:userSettingID>a5073f52-b31d-45e5-8337-ac2ba50ba974</dcsset:userSettingID>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:FilterItemComparison">
 					<dcsset:use>false</dcsset:use>
 					<dcsset:left xsi:type="dcscor:Field">Этап</dcsset:left>
 					<dcsset:comparisonType>Equal</dcsset:comparisonType>
-					<dcsset:right xsi:nil="true"/>
 					<dcsset:userSettingID>abacf5fd-0cee-47b6-b0d9-e744fe154638</dcsset:userSettingID>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:FilterItemComparison">
 					<dcsset:use>false</dcsset:use>
 					<dcsset:left xsi:type="dcscor:Field">Сотрудник</dcsset:left>
 					<dcsset:comparisonType>Equal</dcsset:comparisonType>
-					<dcsset:right xsi:nil="true"/>
 					<dcsset:userSettingID>b10eec7a-d241-4cf4-8846-9fc3bf7f778d</dcsset:userSettingID>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:FilterItemComparison">
 					<dcsset:use>false</dcsset:use>
 					<dcsset:left xsi:type="dcscor:Field">Работа</dcsset:left>
 					<dcsset:comparisonType>Equal</dcsset:comparisonType>
-					<dcsset:right xsi:nil="true"/>
 					<dcsset:userSettingID>a4ebfcc0-5157-46c4-87f4-8e9643bfc852</dcsset:userSettingID>
 				</dcsset:item>
 			</dcsset:filter>
@@ -365,10 +364,10 @@
 						<dcsset:field>Проект</dcsset:field>
 						<dcsset:groupType>Items</dcsset:groupType>
 						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 					</dcsset:item>
 				</dcsset:groupItems>
-				<dcsset:filter>
-				</dcsset:filter>
 				<dcsset:order>
 					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
 				</dcsset:order>
@@ -396,6 +395,8 @@
 							<dcsset:field>Этап</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 						</dcsset:item>
 					</dcsset:groupItems>
 					<dcsset:order>
@@ -410,6 +411,8 @@
 								<dcsset:field>Сотрудник</dcsset:field>
 								<dcsset:groupType>Items</dcsset:groupType>
 								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 							</dcsset:item>
 						</dcsset:groupItems>
 						<dcsset:order>
@@ -424,21 +427,29 @@
 									<dcsset:field>Дата</dcsset:field>
 									<dcsset:groupType>Items</dcsset:groupType>
 									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 								</dcsset:item>
 								<dcsset:item xsi:type="dcsset:GroupItemField">
 									<dcsset:field>Работа</dcsset:field>
 									<dcsset:groupType>Items</dcsset:groupType>
 									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 								</dcsset:item>
 								<dcsset:item xsi:type="dcsset:GroupItemField">
 									<dcsset:field>Содержание</dcsset:field>
 									<dcsset:groupType>Items</dcsset:groupType>
 									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 								</dcsset:item>
 								<dcsset:item xsi:type="dcsset:GroupItemField">
 									<dcsset:field>Примечание</dcsset:field>
 									<dcsset:groupType>Items</dcsset:groupType>
 									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 								</dcsset:item>
 							</dcsset:groupItems>
 							<dcsset:order>
@@ -461,6 +472,8 @@
 						<dcsset:field>Проект.КонтрагентРаботодатель</dcsset:field>
 						<dcsset:groupType>Items</dcsset:groupType>
 						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 					</dcsset:item>
 				</dcsset:groupItems>
 				<dcsset:order>
@@ -499,6 +512,8 @@
 							<dcsset:field>Проект.Менеджер</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 						</dcsset:item>
 					</dcsset:groupItems>
 					<dcsset:order>
@@ -522,6 +537,8 @@
 								<dcsset:field>Проект</dcsset:field>
 								<dcsset:groupType>Items</dcsset:groupType>
 								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 							</dcsset:item>
 						</dcsset:groupItems>
 						<dcsset:order>
@@ -561,11 +578,11 @@
 			</dcsset:dataParameters>
 			<dcsset:outputParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
 					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">BeginAndEnd</dcscor:value>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
 					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">BeginAndEnd</dcscor:value>
 				</dcscor:item>
 			</dcsset:outputParameters>
@@ -575,7 +592,7 @@
 						<dcsset:item xsi:type="dcsset:GroupItemField">
 							<dcsset:field>Период</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
-							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionType>Day</dcsset:periodAdditionType>
 							<dcsset:periodAdditionBegin xsi:type="dcscor:Field">ПараметрыДанных.НачалоПериода</dcsset:periodAdditionBegin>
 							<dcsset:periodAdditionEnd xsi:type="dcscor:Field">ПараметрыДанных.КонецПериода</dcsset:periodAdditionEnd>
 						</dcsset:item>
@@ -603,6 +620,8 @@
 							<dcsset:field>Сотрудник</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 						</dcsset:item>
 					</dcsset:groupItems>
 					<dcsset:order>
@@ -617,6 +636,8 @@
 								<dcsset:field>Проект</dcsset:field>
 								<dcsset:groupType>Items</dcsset:groupType>
 								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 							</dcsset:item>
 						</dcsset:groupItems>
 						<dcsset:order>
@@ -629,6 +650,10 @@
 				</dcsset:row>
 				<dcsset:outputParameters>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:parameter>Заголовок</dcscor:parameter>
 						<dcscor:value xsi:type="v8:LocalStringType">
 							<v8:item>
@@ -636,10 +661,6 @@
 								<v8:content>Выработка по проектам с разбивкой по дням</v8:content>
 							</v8:item>
 						</dcscor:value>
-					</dcscor:item>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
-						<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
 					</dcscor:item>
 				</dcsset:outputParameters>
 			</dcsset:item>
@@ -649,7 +670,7 @@
 						<dcsset:item xsi:type="dcsset:GroupItemField">
 							<dcsset:field>Дата</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
-							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionType>Day</dcsset:periodAdditionType>
 							<dcsset:periodAdditionBegin xsi:type="dcscor:Field">ПараметрыДанных.НачалоПериода</dcsset:periodAdditionBegin>
 							<dcsset:periodAdditionEnd xsi:type="dcscor:Field">ПараметрыДанных.КонецПериода</dcsset:periodAdditionEnd>
 						</dcsset:item>
@@ -677,6 +698,8 @@
 							<dcsset:field>Сотрудник</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 						</dcsset:item>
 					</dcsset:groupItems>
 					<dcsset:order>
@@ -691,6 +714,8 @@
 								<dcsset:field>Проект</dcsset:field>
 								<dcsset:groupType>Items</dcsset:groupType>
 								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 							</dcsset:item>
 						</dcsset:groupItems>
 						<dcsset:order>
@@ -705,6 +730,8 @@
 									<dcsset:field>Этап</dcsset:field>
 									<dcsset:groupType>Items</dcsset:groupType>
 									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 								</dcsset:item>
 							</dcsset:groupItems>
 							<dcsset:order>
@@ -757,6 +784,13 @@
 						</dcscor:value>
 					</dcscor:item>
 				</dcsset:outputParameters>
+				<dcsset:userSettingID>b1969871-2a79-4427-81cf-8cfb6264f62f</dcsset:userSettingID>
+				<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Детальная расшифровка</v8:content>
+					</v8:item>
+				</dcsset:userSettingPresentation>
 			</dcsset:item>
 			<dcsset:itemsUserSettingID>19ba7c0f-d73c-430c-a2a9-5198479bb4f8</dcsset:itemsUserSettingID>
 		</dcsset:settings>
@@ -766,7 +800,7 @@
 		<dcsset:presentation xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>По проекту и этапу за все время</v8:content>
+				<v8:content>Трудозатраты в периоде по Проект/Этап</v8:content>
 			</v8:item>
 		</dcsset:presentation>
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
@@ -785,22 +819,32 @@
 				<dcsset:item xsi:type="dcsset:FilterItemComparison">
 					<dcsset:left xsi:type="dcscor:Field">Проект</dcsset:left>
 					<dcsset:comparisonType>Equal</dcsset:comparisonType>
-					<dcsset:right xsi:nil="true"/>
 					<dcsset:userSettingID>a36ea693-dbdc-4abe-a8e6-99c43ae59352</dcsset:userSettingID>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:FilterItemComparison">
 					<dcsset:left xsi:type="dcscor:Field">Этап</dcsset:left>
 					<dcsset:comparisonType>Equal</dcsset:comparisonType>
-					<dcsset:right xsi:nil="true"/>
 					<dcsset:userSettingID>31fe10c1-cf22-40d6-b58e-8c44448ee411</dcsset:userSettingID>
 				</dcsset:item>
 			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ПериодОтчета</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:dataParameters>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
 				<dcsset:groupItems>
 					<dcsset:item xsi:type="dcsset:GroupItemField">
 						<dcsset:field>Проект</dcsset:field>
 						<dcsset:groupType>Items</dcsset:groupType>
 						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 					</dcsset:item>
 				</dcsset:groupItems>
 				<dcsset:order>
@@ -815,6 +859,8 @@
 							<dcsset:field>Этап</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 						</dcsset:item>
 					</dcsset:groupItems>
 					<dcsset:order>
@@ -823,36 +869,6 @@
 					<dcsset:selection>
 						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
 					</dcsset:selection>
-					<dcsset:item xsi:type="dcsset:StructureItemGroup">
-						<dcsset:groupItems>
-							<dcsset:item xsi:type="dcsset:GroupItemField">
-								<dcsset:field>Дата</dcsset:field>
-								<dcsset:groupType>Items</dcsset:groupType>
-								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-							</dcsset:item>
-						</dcsset:groupItems>
-						<dcsset:order>
-							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
-						</dcsset:order>
-						<dcsset:selection>
-							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
-						</dcsset:selection>
-						<dcsset:item xsi:type="dcsset:StructureItemGroup">
-							<dcsset:groupItems>
-								<dcsset:item xsi:type="dcsset:GroupItemField">
-									<dcsset:field>ПВР</dcsset:field>
-									<dcsset:groupType>Items</dcsset:groupType>
-									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-								</dcsset:item>
-							</dcsset:groupItems>
-							<dcsset:order>
-								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
-							</dcsset:order>
-							<dcsset:selection>
-								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
-							</dcsset:selection>
-						</dcsset:item>
-					</dcsset:item>
 				</dcsset:item>
 			</dcsset:item>
 		</dcsset:settings>

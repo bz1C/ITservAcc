@@ -1562,12 +1562,12 @@
           <autoFill>true</autoFill>
         </autoCommandBar>
         <handlers>
-          <event>OnStartEdit</event>
-          <name>ТекущаяВыработкаПриНачалеРедактирования</name>
-        </handlers>
-        <handlers>
           <event>OnActivateRow</event>
           <name>ТекущаяВыработкаПриАктивизацииСтроки</name>
+        </handlers>
+        <handlers>
+          <event>OnStartEdit</event>
+          <name>ТекущаяВыработкаПриНачалеРедактирования</name>
         </handlers>
         <searchStringAddition>
           <visible>true</visible>

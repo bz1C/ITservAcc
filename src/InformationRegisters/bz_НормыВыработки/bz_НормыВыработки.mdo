@@ -80,8 +80,8 @@
       <value>Аналитика</value>
     </synonym>
     <type>
-      <types>CatalogRef.bz_Проекты</types>
       <types>CatalogRef.Контрагенты</types>
+      <types>CatalogRef.bz_Проекты</types>
       <types>CatalogRef.bz_ЭтапыПроектов</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
