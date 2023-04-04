@@ -954,11 +954,6 @@
 									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
 									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 								</dcsset:item>
-								<dcsset:item xsi:type="dcsset:GroupItemField">
-									<dcsset:field>Регистратор</dcsset:field>
-									<dcsset:groupType>Items</dcsset:groupType>
-									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-								</dcsset:item>
 							</dcsset:groupItems>
 							<dcsset:order>
 								<dcsset:item xsi:type="dcsset:OrderItemField">
@@ -980,48 +975,29 @@
 								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
 							</dcsset:selection>
 							<dcsset:conditionalAppearance>
-								<dcsset:item>
-									<dcsset:selection>
-										<dcsset:item>
-											<dcsset:field>Регистратор</dcsset:field>
-										</dcsset:item>
-									</dcsset:selection>
-									<dcsset:filter/>
-									<dcsset:appearance>
-										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-											<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-											<dcscor:value xsi:type="xs:decimal">5</dcscor:value>
-										</dcscor:item>
-										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-											<dcscor:parameter>Текст</dcscor:parameter>
-											<dcscor:value xsi:type="v8:LocalStringType">
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content/>
-												</v8:item>
-											</dcscor:value>
-										</dcscor:item>
-										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-											<dcscor:parameter>ЦветТекста</dcscor:parameter>
-											<dcscor:value xsi:type="v8ui:Color">web:DeepSkyBlue</dcscor:value>
-										</dcscor:item>
-										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-											<dcscor:parameter>Картинка</dcscor:parameter>
-											<dcscor:value xsi:type="v8ui:Picture" ref="v8ui:DataSearch"/>
-										</dcscor:item>
-										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-											<dcscor:parameter>РазмерКартинки</dcscor:parameter>
-											<dcscor:value xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet" xsi:type="mxl:PictureSize">AutoSize</dcscor:value>
-										</dcscor:item>
-									</dcsset:appearance>
-									<dcsset:presentation xsi:type="v8:LocalStringType">
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Поле для открытия документа-регистратора</v8:content>
-										</v8:item>
-									</dcsset:presentation>
-								</dcsset:item>
 							</dcsset:conditionalAppearance>
+							<dcsset:item xsi:type="dcsset:StructureItemGroup">
+								<dcsset:groupItems>
+									<dcsset:item xsi:type="dcsset:GroupItemField">
+										<dcsset:field>Регистратор</dcsset:field>
+										<dcsset:groupType>Items</dcsset:groupType>
+										<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									</dcsset:item>
+								</dcsset:groupItems>
+								<dcsset:order>
+									<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+								</dcsset:order>
+								<dcsset:selection>
+									<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+								</dcsset:selection>
+								<dcsset:userSettingID>4f3920d5-89cf-42b2-949a-e7e29fa5ebe8</dcsset:userSettingID>
+								<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Показывать регистратор</v8:content>
+									</v8:item>
+								</dcsset:userSettingPresentation>
+							</dcsset:item>
 						</dcsset:item>
 					</dcsset:item>
 				</dcsset:item>
