@@ -91,9 +91,6 @@
   <enums>Enum.СтавкиНДС</enums>
   <enums>Enum.bz_ВариантыВыставленияОтработанногоВремени</enums>
   <enums>Enum.bz_СтатусыЭтаповПроектов</enums>
-  <reports>Report.ВыработкаТаблицаПоДням</reports>
-  <reports>Report.НормыВыработки</reports>
-  <reports>Report.ВыставленныеРаботы</reports>
   <reports>Report.Выработка</reports>
   <dataProcessors>DataProcessor.КорректировкаДвижений</dataProcessors>
   <dataProcessors>DataProcessor.bz_КонтрольНормыВыработки</dataProcessors>
