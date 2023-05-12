@@ -85,7 +85,6 @@
   <documents>Document.bz_ВыставлениеРабот</documents>
   <documents>Document.СчетНаОплатуПокупателю</documents>
   <enums>Enum.bz_СостоянияПроектовВПериодах</enums>
-  <enums>Enum.Периодичность</enums>
   <enums>Enum.ВидыДнейПроизводственногоКалендаря</enums>
   <enums>Enum.СтатусОплатыСчета</enums>
   <enums>Enum.СтавкиНДС</enums>
@@ -94,7 +93,6 @@
   <reports>Report.Выработка</reports>
   <dataProcessors>DataProcessor.КорректировкаДвижений</dataProcessors>
   <dataProcessors>DataProcessor.bz_КонтрольНормыВыработки</dataProcessors>
-  <informationRegisters>InformationRegister.bz_СостоянияЗакрытияПериодов</informationRegisters>
   <informationRegisters>InformationRegister.ДанныеПроизводственногоКалендаря</informationRegisters>
   <informationRegisters>InformationRegister.bz_ПочасовыеСтавкиРабот</informationRegisters>
   <informationRegisters>InformationRegister.СчетНаОплатуПокупателюОплатаСервиса</informationRegisters>

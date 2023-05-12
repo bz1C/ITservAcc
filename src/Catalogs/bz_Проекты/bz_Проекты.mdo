@@ -75,19 +75,4 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="0a1d60c2-d896-4d53-9f0c-d44765fe0e25">
-    <name>ПериодичнеостьАктирования</name>
-    <synonym>
-      <key>ru</key>
-      <value>Периодичнеость актирования (по умолчанию)</value>
-    </synonym>
-    <type>
-      <types>EnumRef.Периодичность</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
 </mdclass:Catalog>
