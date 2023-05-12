@@ -221,6 +221,8 @@
 	<calculatedField>
 		<dataPath>Цена</dataPath>
 		<expression>выбор 
+когда ЕСТЬNULL(ТрудозатратыНаСогласовании,0) + ЕСТЬNULL(ТрудозатратыСогласовано,0) =0 и ЕСТЬNULL(СуммаСогласовано,0) + ЕСТЬNULL(СуммаНаСогласовании,0) = 0
+ТОГДА NULL
 когда ТрудозатратыНаСогласовании + ТрудозатратыСогласовано =0
 Тогда СуммаСогласовано + СуммаНаСогласовании
 иначе (СуммаСогласовано + СуммаНаСогласовании)/(ТрудозатратыНаСогласовании + ТрудозатратыСогласовано)
@@ -237,12 +239,11 @@
 				<dcscor:value xsi:type="xs:decimal">15</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-				<dcscor:use>false</dcscor:use>
 				<dcscor:parameter>Формат</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>ru</v8:lang>
-						<v8:content/>
+						<v8:content>ЧДЦ=2</v8:content>
 					</v8:item>
 				</dcscor:value>
 			</dcscor:item>
@@ -286,9 +287,10 @@
 	</totalField>
 	<totalField>
 		<dataPath>Цена</dataPath>
-		<expression>выбор когда минимум(Цена) = максимум(Цена)
-Тогда Сумма(Цена)
-иначе NULL
+		<expression>ВЫБОР 
+	КОГДА МИНИМУМ(Цена) = МАКСИМУМ(Цена)
+	ТОГДА МАКСИМУМ(Цена)
+	ИНАЧЕ NULL
 КОНЕЦ</expression>
 	</totalField>
 	<parameter>
@@ -1447,6 +1449,9 @@
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:use>false</dcsset:use>
 					<dcsset:field>Контроль</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Цена</dcsset:field>
 				</dcsset:item>
 				<dcsset:userSettingID>4e0937c0-9dae-446f-b298-87048303cb19</dcsset:userSettingID>
 			</dcsset:selection>
