@@ -24,6 +24,8 @@
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
   <defaultRoles>Role.bz_ОсновнаяРоль</defaultRoles>
+  <vendor>(С) 2023 Чернуль Александр Владимирович</vendor>
+  <version>1.0.0.1</version>
   <defaultLanguage>Language.Русский</defaultLanguage>
   <interfaceCompatibilityMode>TaxiEnableVersion8_2</interfaceCompatibilityMode>
   <languages uuid="ea9d4cde-74d4-42bc-872b-04aaa914a88d" extendedConfigurationObject="db4a9ccb-9ef5-4b3c-8577-b6fe5db1b62e">

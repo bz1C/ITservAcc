@@ -28,7 +28,6 @@
         </types>
       </typeExtension>
     </extension>
-    <type/>
   </resources>
   <dimensions uuid="e7d1c107-3304-4b29-9c12-77ae6c379b36" extendedConfigurationObject="ca7d4086-de35-40fd-af65-73369d452135">
     <name>ПроизводственныйКалендарь</name>
@@ -42,7 +41,6 @@
         </types>
       </typeExtension>
     </extension>
-    <type/>
   </dimensions>
   <dimensions uuid="4faedb6c-6867-4b35-b4b3-6f6922aab447" extendedConfigurationObject="563c0f5c-e0b4-4229-a3f6-183091060aa4">
     <name>Дата</name>
@@ -59,7 +57,6 @@
         </dateQualifiers>
       </typeExtension>
     </extension>
-    <type/>
   </dimensions>
   <dimensions uuid="646527e3-1fd9-471b-8607-ea5ad7579da8" extendedConfigurationObject="bf967588-ea8f-49a3-9331-af2331ffa162">
     <name>Год</name>
@@ -77,6 +74,5 @@
         </numberQualifiers>
       </typeExtension>
     </extension>
-    <type/>
   </dimensions>
 </mdclass:InformationRegister>

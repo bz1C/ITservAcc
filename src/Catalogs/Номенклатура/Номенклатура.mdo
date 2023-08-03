@@ -32,7 +32,6 @@
         </stringQualifiers>
       </typeExtension>
     </extension>
-    <type/>
   </attributes>
   <attributes uuid="268345fc-b226-4b92-959e-2dc59887f584" extendedConfigurationObject="8a73fbc9-3461-4176-9231-1bde86327bff">
     <name>Артикул</name>
@@ -49,7 +48,6 @@
         </stringQualifiers>
       </typeExtension>
     </extension>
-    <type/>
   </attributes>
   <attributes uuid="01ebaebf-1a85-44c3-b882-21d90a84b5a3" extendedConfigurationObject="e78d9154-2725-4305-80f5-f51e13ac3c5a">
     <name>ЕдиницаИзмерения</name>
@@ -63,6 +61,5 @@
         </types>
       </typeExtension>
     </extension>
-    <type/>
   </attributes>
 </mdclass:Catalog>

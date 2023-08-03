@@ -291,7 +291,11 @@
       <autoMaxHeight>true</autoMaxHeight>
       <horizontalStretch>false</horizontalStretch>
       <groupVerticalAlign>Center</groupVerticalAlign>
-      <extInfo xsi:type="form:PictureDecorationExtInfo"/>
+      <extInfo xsi:type="form:PictureDecorationExtInfo">
+        <picture xsi:type="core:PictureRef">
+          <picture>CommonPicture.НезавершившаясяПроверка</picture>
+        </picture>
+      </extInfo>
     </items>
     <items xsi:type="form:Decoration">
       <name>ТекстПриАктуализации</name>
@@ -1104,6 +1108,12 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <choiceParameterLinks>
+                <name>Отбор.Владелец</name>
+                <datapath xsi:type="form:DataPath">
+                  <segments>Items.Хозрасчетный.CurrentData.Организация</segments>
+                </datapath>
+              </choiceParameterLinks>
               <inputHint>
                 <key>ru</key>
                 <value>Подразделение</value>
@@ -1746,6 +1756,12 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <choiceParameterLinks>
+                <name>Отбор.Владелец</name>
+                <datapath xsi:type="form:DataPath">
+                  <segments>Items.Хозрасчетный.CurrentData.Организация</segments>
+                </datapath>
+              </choiceParameterLinks>
               <inputHint>
                 <key>ru</key>
                 <value>Подразделение</value>
@@ -8460,4 +8476,5 @@
     <navigationPanel/>
     <commandBar/>
   </commandInterface>
+  <extInfo xsi:type="form:ObjectFormExtInfo"/>
 </form:Form>
