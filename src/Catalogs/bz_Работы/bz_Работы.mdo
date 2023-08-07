@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="54b781ce-89ec-48b0-bb85-a231f75c2e56">
   <producedTypes>
@@ -93,3 +94,100 @@
     <dataHistory>Use</dataHistory>
   </attributes>
 </mdclass:Catalog>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="54b781ce-89ec-48b0-bb85-a231f75c2e56">
+  <producedTypes>
+    <objectType typeId="6dbc6627-0ba8-4e42-9e63-3269fde1a9d3" valueTypeId="71dca50f-faa0-43da-a9b0-06d2da9b054b"/>
+    <refType typeId="dd02b31e-97b4-404f-bc2b-5f84c3339d27" valueTypeId="940518e0-0750-4ccb-a94b-fb2480f8e259"/>
+    <selectionType typeId="4789238e-5cd5-4313-9131-acf133440e63" valueTypeId="ef73d5bf-cb09-404a-9651-aef904b5ebca"/>
+    <listType typeId="000cd6fe-f891-4b6f-b8d9-bf84d5bfaa30" valueTypeId="39666bcd-9430-4f9e-b3ea-7f4ee96283a3"/>
+    <managerType typeId="f4c5cc04-605c-45b2-8328-f4c7449cb156" valueTypeId="310c9b55-caca-435c-8357-a6d2097290f9"/>
+  </producedTypes>
+  <name>bz_Работы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.bz_Работы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.bz_Работы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="66b03cc9-fc59-4be7-a639-1e6524b98d62">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6ee5ae8f-025d-4009-98ad-1e9c25b77e39">
+    <name>НеВыставляется</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не выставляется</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e70cd167-2647-4a5f-a790-d7903a168766">
+    <name>Виртуальная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Виртуальная</value>
+    </synonym>
+    <comment>Время, которое фактически не отрабатывалось (сэкономленные плановые трудозатраты)</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7290d314-f423-4a87-b8f8-d50356016e04">
+    <name>Техническая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Техническая (не является работой)</value>
+    </synonym>
+    <comment>Выходные, отпуска, праздники, отгулы</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>
+>>>>>>> refs/remotes/origin/develop

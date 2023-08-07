@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="96368577-9ed8-43c0-97ae-c1158b670cb7" extendedConfigurationObject="225d7842-f8f4-4d0e-9173-7b0c9608e4af">
   <producedTypes>
@@ -13,3 +14,20 @@
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
 </mdclass:Catalog>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="96368577-9ed8-43c0-97ae-c1158b670cb7" extendedConfigurationObject="225d7842-f8f4-4d0e-9173-7b0c9608e4af">
+  <producedTypes>
+    <objectType typeId="01566cfd-3b10-4e77-8c84-00e54730f7f9" valueTypeId="3e1b80d0-f507-4b7e-8af7-589a2e2af5af"/>
+    <refType typeId="13721678-73cb-4f33-bed8-0fb2b59bbe85" valueTypeId="59327411-46f1-472f-a4e9-7f97aee46bc9"/>
+    <selectionType typeId="05c8e87c-1bea-41d6-947a-5351b3065c0b" valueTypeId="0dc4fd1a-8fb2-43b1-8460-bcca8f3da945"/>
+    <listType typeId="2ddb8a84-3319-405f-ab5b-6c14d7b40cc8" valueTypeId="f07db974-9322-43b6-b259-e41dca8430eb"/>
+    <managerType typeId="ec6369b3-88ab-47ea-9727-659fa30537e4" valueTypeId="ef7352c6-f81d-4ca5-a1fc-d98760e6a81a"/>
+  </producedTypes>
+  <name>Валюты</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+</mdclass:Catalog>
+>>>>>>> refs/remotes/origin/develop

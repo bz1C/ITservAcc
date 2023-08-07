@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:StyleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="acb33b2b-e69c-4e37-b53a-2afda33c9aea" extendedConfigurationObject="13f08cc8-e1ae-45ec-a4b1-67afd4d8d968">
   <name>ШрифтЗаголовкаРазделаМонитораРуководителя</name>
@@ -8,3 +9,15 @@
   </extension>
   <type>Font</type>
 </mdclass:StyleItem>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:StyleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="acb33b2b-e69c-4e37-b53a-2afda33c9aea" extendedConfigurationObject="13f08cc8-e1ae-45ec-a4b1-67afd4d8d968">
+  <name>ШрифтЗаголовкаРазделаМонитораРуководителя</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:StyleItemExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <type>Checked</type>
+  </extension>
+  <type>Font</type>
+</mdclass:StyleItem>
+>>>>>>> refs/remotes/origin/develop

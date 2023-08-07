@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:StyleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="478894dd-e5e2-42ff-98d3-b4ae5d6f696c" extendedConfigurationObject="7b802612-3034-4413-9ee8-60e94ebed6d6">
   <name>ЦветФонаНекорректногоЗначенияБИП</name>
@@ -7,3 +8,14 @@
     <type>Checked</type>
   </extension>
 </mdclass:StyleItem>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:StyleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="478894dd-e5e2-42ff-98d3-b4ae5d6f696c" extendedConfigurationObject="7b802612-3034-4413-9ee8-60e94ebed6d6">
+  <name>ЦветФонаНекорректногоЗначенияБИП</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:StyleItemExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <type>Checked</type>
+  </extension>
+</mdclass:StyleItem>
+>>>>>>> refs/remotes/origin/develop

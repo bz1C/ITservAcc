@@ -1,3 +1,111 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="0ec25f43-51b1-4491-985f-5035837d6f7f">
+  <name>bzУУ</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:ConfigurationExtension">
+    <defaultRunMode>Checked</defaultRunMode>
+    <usePurposes>Checked</usePurposes>
+    <defaultLanguage>Checked</defaultLanguage>
+    <interfaceCompatibilityMode>Checked</interfaceCompatibilityMode>
+    <defaultRoles>Extended</defaultRoles>
+  </extension>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="d6930202-fc60-48f6-95bd-cc4e2cf5798c"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="876c75fc-50a3-4e89-a773-fa7b00821744"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="c0a2ed99-f2bc-4f9d-b19f-6698ca4562ce"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="e9c69d21-31bb-461b-bf38-456b21ac8c2e"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="9c6458aa-c944-4b57-9305-07ccf376b7fc"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="8d67bd0b-e726-4727-8e36-b5b794346e0f"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="0962fdfd-cd3b-41f5-947f-d745065e0a15"/>
+  <keepMappingToExtendedConfigurationObjectsByIDs>true</keepMappingToExtendedConfigurationObjectsByIDs>
+  <namePrefix>bz_</namePrefix>
+  <configurationExtensionCompatibilityMode>8.3.21</configurationExtensionCompatibilityMode>
+  <configurationExtensionPurpose>AddOn</configurationExtensionPurpose>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <defaultRoles>Role.bz_ОсновнаяРоль</defaultRoles>
+  <vendor>(С) 2023 Чернуль Александр Владимирович</vendor>
+  <version>1.0.0.1</version>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <interfaceCompatibilityMode>TaxiEnableVersion8_2</interfaceCompatibilityMode>
+  <compatibilityMode>8.3.22</compatibilityMode>
+  <languages uuid="ea9d4cde-74d4-42bc-872b-04aaa914a88d" extendedConfigurationObject="db4a9ccb-9ef5-4b3c-8577-b6fe5db1b62e">
+    <name>Русский</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:LanguageExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <languageCode>Checked</languageCode>
+    </extension>
+    <languageCode>ru</languageCode>
+  </languages>
+  <subsystems>Subsystem.bz_УУ</subsystems>
+  <styleItems>StyleItem.СодержаниеУслугиШрифт</styleItems>
+  <styleItems>StyleItem.ЦветФонаНекорректногоКонтрагента</styleItems>
+  <styleItems>StyleItem.ЗаголовкиСтрокЦветТекста</styleItems>
+  <styleItems>StyleItem.ЗаголовкиСтрокШрифт</styleItems>
+  <styleItems>StyleItem.ЦветФонаНекорректногоЗначенияБИП</styleItems>
+  <styleItems>StyleItem.ИтогиФонГруппы</styleItems>
+  <styleItems>StyleItem.ЦветФонаПредупреждения</styleItems>
+  <styleItems>StyleItem.ШрифтЗаголовкаРазделаМонитораРуководителя</styleItems>
+  <styleItems>StyleItem.ГиперссылкаЦвет</styleItems>
+  <commonPictures>CommonPicture.АктивностьПоРН</commonPictures>
+  <commonPictures>CommonPicture.ЖурналПроводок</commonPictures>
+  <commonPictures>CommonPicture.СостоянияДокумента</commonPictures>
+  <commonPictures>CommonPicture.Отчеты</commonPictures>
+  <commonPictures>CommonPicture.СтрелкаВправо</commonPictures>
+  <commonPictures>CommonPicture.ОчиститьЗначение</commonPictures>
+  <commonPictures>CommonPicture.РассчитатьЗарплатуИЗаполнить</commonPictures>
+  <commonPictures>CommonPicture.ПодсказкаНаПанели</commonPictures>
+  <commonPictures>CommonPicture.Видеоинструкция</commonPictures>
+  <commonPictures>CommonPicture.Пустая</commonPictures>
+  <commonPictures>CommonPicture.ЗаполнитьФорму</commonPictures>
+  <roles>Role.bz_ОсновнаяРоль</roles>
+  <commonModules>CommonModule.bz_ОбщиеАлгоритмыУУ</commonModules>
+  <commonCommands>CommonCommand.ПоказатьДвиженияДокументаРасш</commonCommands>
+  <commonCommands>CommonCommand.ОтправитьПоЭлектроннойПочте</commonCommands>
+  <commonCommands>CommonCommand.СвязанныеДокументы</commonCommands>
+  <commonCommands>CommonCommand.ПрисоединенныеФайлыБП</commonCommands>
+  <commonCommands>CommonCommand.ДополнительныеСведенияКоманднаяПанель</commonCommands>
+  <commonCommands>CommonCommand.ИсторияИзменений</commonCommands>
+  <catalogs>Catalog.bz_Проекты</catalogs>
+  <catalogs>Catalog.bz_Работы</catalogs>
+  <catalogs>Catalog.Контрагенты</catalogs>
+  <catalogs>Catalog.Организации</catalogs>
+  <catalogs>Catalog.bz_ЭтапыПроектов</catalogs>
+  <catalogs>Catalog.Номенклатура</catalogs>
+  <catalogs>Catalog.ФизическиеЛица</catalogs>
+  <catalogs>Catalog.ПроизводственныеКалендари</catalogs>
+  <catalogs>Catalog.ДоговорыКонтрагентов</catalogs>
+  <catalogs>Catalog.БанковскиеСчета</catalogs>
+  <catalogs>Catalog.СпособыДоставки</catalogs>
+  <catalogs>Catalog.Валюты</catalogs>
+  <catalogs>Catalog.ПодразделенияОрганизаций</catalogs>
+  <catalogs>Catalog.КлассификаторЕдиницИзмерения</catalogs>
+  <catalogs>Catalog.Пользователи</catalogs>
+  <catalogs>Catalog.bz_ПозицияВыполненияРабот</catalogs>
+  <catalogs>Catalog.bz_ПричиныСписанияТрудозатрат</catalogs>
+  <documents>Document.bz_ВыполнениеРабот</documents>
+  <documents>Document.bz_ВыставлениеРабот</documents>
+  <documents>Document.СчетНаОплатуПокупателю</documents>
+  <enums>Enum.bz_СостоянияПроектовВПериодах</enums>
+  <enums>Enum.ВидыДнейПроизводственногоКалендаря</enums>
+  <enums>Enum.СтатусОплатыСчета</enums>
+  <enums>Enum.СтавкиНДС</enums>
+  <enums>Enum.bz_ВариантыВыставленияОтработанногоВремени</enums>
+  <enums>Enum.bz_СтатусыЭтаповПроектов</enums>
+  <reports>Report.Выработка</reports>
+  <dataProcessors>DataProcessor.КорректировкаДвижений</dataProcessors>
+  <dataProcessors>DataProcessor.bz_КонтрольНормыВыработки</dataProcessors>
+  <informationRegisters>InformationRegister.ДанныеПроизводственногоКалендаря</informationRegisters>
+  <informationRegisters>InformationRegister.bz_ПочасовыеСтавкиРабот</informationRegisters>
+  <informationRegisters>InformationRegister.СчетНаОплатуПокупателюОплатаСервиса</informationRegisters>
+  <informationRegisters>InformationRegister.bz_НормыВыработки</informationRegisters>
+  <accumulationRegisters>AccumulationRegister.bz_Выработка</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.bz_РаботыКВыставлению</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.bz_СписанныеТрудозатраты</accumulationRegisters>
+</mdclass:Configuration>
+=======
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="0ec25f43-51b1-4491-985f-5035837d6f7f">
   <name>bzУУ</name>
@@ -103,3 +211,4 @@
   <accumulationRegisters>AccumulationRegister.bz_РаботыКВыставлению</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.bz_СписанныеТрудозатраты</accumulationRegisters>
 </mdclass:Configuration>
+>>>>>>> refs/remotes/origin/develop

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:CommonPicture xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="e3e26e68-f1c5-43a2-97fa-878d9a376c9c" extendedConfigurationObject="fe5ff2f7-7bc1-4def-94e9-610520863224">
   <name>Отчеты</name>
@@ -6,3 +7,13 @@
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
 </mdclass:CommonPicture>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="e3e26e68-f1c5-43a2-97fa-878d9a376c9c" extendedConfigurationObject="fe5ff2f7-7bc1-4def-94e9-610520863224">
+  <name>Отчеты</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CommonPictureExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+</mdclass:CommonPicture>
+>>>>>>> refs/remotes/origin/develop

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="08416cd0-c40a-4be1-930c-60010f110338" extendedConfigurationObject="5ba24320-3cb9-4b6a-a63c-7ace9b5a796a">
   <producedTypes>
@@ -13,3 +14,20 @@
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
 </mdclass:Catalog>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="08416cd0-c40a-4be1-930c-60010f110338" extendedConfigurationObject="5ba24320-3cb9-4b6a-a63c-7ace9b5a796a">
+  <producedTypes>
+    <objectType typeId="14df6294-7ed3-40d5-bbe1-c0b69d0e8802" valueTypeId="ac1c5da6-a0f3-409f-b46c-324e903c530a"/>
+    <refType typeId="f9e424ba-70d3-495c-af51-90ff136ef272" valueTypeId="a4aae2aa-55ab-4e11-a548-ce67158a5e44"/>
+    <selectionType typeId="619737fb-c3dc-47f7-a745-5cfa5391bc79" valueTypeId="29dbd03e-f42c-457f-a693-9845224f15e6"/>
+    <listType typeId="94be29c2-1406-4e55-8b8d-2bc5529d3812" valueTypeId="6a18e979-107b-4b8f-9110-ca4d4816be47"/>
+    <managerType typeId="bab76c28-2369-4891-8260-04ea8d7463ec" valueTypeId="baa9ccfc-fc6d-4336-b078-0e5e21343c1e"/>
+  </producedTypes>
+  <name>КлассификаторЕдиницИзмерения</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+</mdclass:Catalog>
+>>>>>>> refs/remotes/origin/develop

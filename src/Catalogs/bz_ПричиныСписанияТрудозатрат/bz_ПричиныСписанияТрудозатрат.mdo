@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eb185603-3539-4db9-bee3-6246a4f68f98">
   <producedTypes>
@@ -30,3 +31,37 @@
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
 </mdclass:Catalog>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eb185603-3539-4db9-bee3-6246a4f68f98">
+  <producedTypes>
+    <objectType typeId="b8763948-a4e2-4f43-ad53-c599150b39ed" valueTypeId="1481d17a-964d-4cf9-8b3c-091d755bb0e3"/>
+    <refType typeId="6d42c35e-71b0-4c7f-b314-21ab5d777ca4" valueTypeId="8e9becd5-f998-49a0-a28f-50cccb5ccecf"/>
+    <selectionType typeId="f33ae64d-e3ce-4826-8762-e241d42af7d9" valueTypeId="09551814-91dc-485c-b585-d809dc6ff862"/>
+    <listType typeId="968042f2-5208-40ae-a43e-b2aee7cc6bc8" valueTypeId="29e58a5c-f244-4231-9b8f-e2883ac9b6bb"/>
+    <managerType typeId="2e3829cc-ef60-41b3-ba80-564e3deced1f" valueTypeId="4d7f2d4a-e58f-4316-8491-08f567eff3ef"/>
+  </producedTypes>
+  <name>bz_ПричиныСписанияТрудозатрат</name>
+  <synonym>
+    <key>ru</key>
+    <value>Причины списания трудозатрат</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.bz_ПричиныСписанияТрудозатрат.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.bz_ПричиныСписанияТрудозатрат.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>
+>>>>>>> refs/remotes/origin/develop

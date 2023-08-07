@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0f482f8f-9c66-4cbd-999e-0a3377216407">
   <name>bz_УУ</name>
@@ -19,3 +20,26 @@
   <content>Report.Выработка</content>
   <content>DataProcessor.bz_КонтрольНормыВыработки</content>
 </mdclass:Subsystem>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0f482f8f-9c66-4cbd-999e-0a3377216407">
+  <name>bz_УУ</name>
+  <synonym>
+    <key>ru</key>
+    <value>УУ</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.bz_ВыставлениеРабот</content>
+  <content>Document.bz_ВыполнениеРабот</content>
+  <content>Catalog.bz_Проекты</content>
+  <content>Catalog.bz_Работы</content>
+  <content>Catalog.bz_ЭтапыПроектов</content>
+  <content>Catalog.ПроизводственныеКалендари</content>
+  <content>InformationRegister.bz_ПочасовыеСтавкиРабот</content>
+  <content>Catalog.bz_ПричиныСписанияТрудозатрат</content>
+  <content>Document.СчетНаОплатуПокупателю</content>
+  <content>Report.Выработка</content>
+  <content>DataProcessor.bz_КонтрольНормыВыработки</content>
+</mdclass:Subsystem>
+>>>>>>> refs/remotes/origin/develop

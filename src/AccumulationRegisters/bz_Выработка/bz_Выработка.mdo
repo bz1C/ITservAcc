@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d3d1ff74-5c44-4185-a5a1-dec0da4d353c">
   <producedTypes>
@@ -290,3 +291,297 @@
     <fullTextSearch>Use</fullTextSearch>
   </dimensions>
 </mdclass:AccumulationRegister>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d3d1ff74-5c44-4185-a5a1-dec0da4d353c">
+  <producedTypes>
+    <selectionType typeId="e145b83b-5ade-4ece-b979-89bf0166988b" valueTypeId="4d75ccd8-b033-4408-a801-492467d958c5"/>
+    <listType typeId="d05c7899-7aed-4501-a890-f340031dc745" valueTypeId="2ca4720b-bd5d-40f9-98a5-38c8a72dd09b"/>
+    <managerType typeId="0c559503-d825-47b6-9bdc-3344c727dec1" valueTypeId="16d3326e-3d62-4dbb-be7b-a93e94653609"/>
+    <recordSetType typeId="47ec2820-ff84-43b7-aac6-67749c7b242f" valueTypeId="13760011-d50a-4134-a555-a6342416fb2e"/>
+    <recordKeyType typeId="7afe1af8-a43a-4573-bf32-2ebd1fa719dc" valueTypeId="01aa0ec3-e2b0-4dff-8ae3-8859e766de40"/>
+    <recordType typeId="a49c7066-b214-4d84-95a1-8ef31235948b" valueTypeId="7c455a12-a899-4cdb-9a3f-c19808415217"/>
+  </producedTypes>
+  <name>bz_Выработка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выработка</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="90eed66d-c3be-4212-83cc-4c85b238508f">
+    <name>Трудозатраты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Трудозатраты (ч)</value>
+    </synonym>
+    <comment>Трудозатраты (в часах дробно)</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="b15f28fa-18b0-4283-aa51-b02459a0671d">
+    <name>ТрудозатратыМинуты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Трудозатраты (минуты)</value>
+    </synonym>
+    <comment>Трудозатраты (в минутах)</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="33f97147-84df-4ee9-968d-4e65aee876c9">
+    <name>СуммаСогласовано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма согласовано</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="6b04f929-41ea-4baf-8d66-7e58706b4c10">
+    <name>ТрудозатратыСогласовано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Трудозатраты согласовано (ч)</value>
+    </synonym>
+    <comment>Трудозатраты (в часах дробно)</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="310d7a5f-d93b-46c2-864f-c6d20375b28a">
+    <name>ТрудозатратыНаСогласовании</name>
+    <synonym>
+      <key>ru</key>
+      <value>Трудозатраты на согласовании (ч)</value>
+    </synonym>
+    <comment>Трудозатраты (в часах дробно)</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="8840e04d-aa83-4b19-b3ae-dcf6600db160">
+    <name>СуммаНаСогласовании</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма на согласовании</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="6390a6a8-95d5-42c9-bd6e-f90355d7db8f">
+    <name>Содержание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Содержание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="d9227416-39e5-4ede-a794-ff12381034b2">
+    <name>Примечание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Примечание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="88d5370f-b4c6-49c7-b3ea-5908c9f0786b">
+    <name>ТрудозатратыЧД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Трудозатраты (ч)</value>
+    </synonym>
+    <comment>Трудозатраты (часы, как в документе)</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="fb5ca5bf-8a49-4b2d-9e43-062ad07f744f">
+    <name>ТрудозатратыМД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Трудозатраты (минуты, как в документе)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="1a24bdc7-5ddb-4d89-b788-7d4478438a0c">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="79199009-fd8b-44cd-9446-1e571b1c9ce3">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.bz_Проекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="9da9e29e-3c03-4b40-8ed9-e575d57fe57a">
+    <name>Этап</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этап</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.bz_ЭтапыПроектов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="d3060862-fc30-4c03-8ae2-28ddd167939b">
+    <name>Работа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Работа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.bz_Работы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="24b06928-ec39-493d-a896-19694a5df8d9">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="72976712-6589-485b-97b8-b3953bad720f">
+    <name>ФактическаяДатаВыработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фактическая дата выработки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <dimensions uuid="6bc6c7e1-7f7c-4bd5-9ce5-64b7f18175b7">
+    <name>ПВР</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПВР</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.bz_ПозицияВыполненияРабот</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+</mdclass:AccumulationRegister>
+>>>>>>> refs/remotes/origin/develop

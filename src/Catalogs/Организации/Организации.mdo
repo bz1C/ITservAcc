@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="67aae511-d713-4f97-bcf5-22a8287c620e" extendedConfigurationObject="fd0c3124-91f5-4c1e-bbc0-f2163e61ff2a">
   <producedTypes>
@@ -13,3 +14,20 @@
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
 </mdclass:Catalog>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="67aae511-d713-4f97-bcf5-22a8287c620e" extendedConfigurationObject="fd0c3124-91f5-4c1e-bbc0-f2163e61ff2a">
+  <producedTypes>
+    <objectType typeId="b41ae1b5-5eeb-4473-99d6-bbdf7d776451" valueTypeId="203ae4fd-0e67-439a-b07b-f9d92df7a899"/>
+    <refType typeId="c4083a46-2dd3-44ba-9d8a-8ca570480feb" valueTypeId="bc04c395-d4d9-4826-8516-f6c4dc038afd"/>
+    <selectionType typeId="1fdddd56-27c2-4115-b8df-46b39138ee19" valueTypeId="c9b155e7-730e-481d-b23d-7e0cb68c4218"/>
+    <listType typeId="8a072c58-519d-4b3e-b9d5-ee692f3b5be8" valueTypeId="570c8c4a-1e00-4018-9664-8d5d7001af74"/>
+    <managerType typeId="a9d3ca34-8c96-4538-bb26-1f525042e69c" valueTypeId="42b23bae-9556-422a-a048-f2d2d5f119e8"/>
+  </producedTypes>
+  <name>Организации</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+</mdclass:Catalog>
+>>>>>>> refs/remotes/origin/develop

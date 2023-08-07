@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:CommonCommand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="036b39e5-8af6-46bd-aacb-265bc9d485fd" extendedConfigurationObject="becf53b6-3fbc-4c70-822f-4a70b0434353">
   <name>ДополнительныеСведенияКоманднаяПанель</name>
@@ -8,3 +9,15 @@
   </extension>
   <group>FormCommandBarImportant</group>
 </mdclass:CommonCommand>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="036b39e5-8af6-46bd-aacb-265bc9d485fd" extendedConfigurationObject="becf53b6-3fbc-4c70-822f-4a70b0434353">
+  <name>ДополнительныеСведенияКоманднаяПанель</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:BasicCommandExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <group>Checked</group>
+  </extension>
+  <group>FormCommandBarImportant</group>
+</mdclass:CommonCommand>
+>>>>>>> refs/remotes/origin/develop

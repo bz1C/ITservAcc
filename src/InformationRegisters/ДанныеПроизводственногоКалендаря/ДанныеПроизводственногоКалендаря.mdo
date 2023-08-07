@@ -1,3 +1,87 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="87b2531d-98d6-416a-a570-edec7ebb3946" extendedConfigurationObject="4a69a70d-1b4c-4999-a3dd-ae1deb331fea">
+  <producedTypes>
+    <selectionType typeId="be80bcf2-b6ce-4474-8db3-ce6abf67b7a8" valueTypeId="f938067d-3bee-4675-8860-b7499b778d18"/>
+    <listType typeId="57543a47-a71b-4b96-b5a4-a487549fbe1a" valueTypeId="6aa61e37-3c0d-477b-850f-78c2a8e0907f"/>
+    <managerType typeId="d5a57124-eb65-4ed2-a948-30ff38444b16" valueTypeId="bac2800d-ea0c-4c3d-8852-96ad08122214"/>
+    <recordSetType typeId="dd1bae55-c6d1-4738-8b95-3fda1be5c78f" valueTypeId="9de4af5a-ce38-4dc0-91b6-eb79f15e16ee"/>
+    <recordKeyType typeId="7245035c-b198-4a30-af94-060794542ed8" valueTypeId="14e4fbab-d07b-427e-b4ac-e270715a2b81"/>
+    <recordType typeId="adfe4fad-134e-47b0-9feb-2159b79e60bc" valueTypeId="e3d16e3f-fe0a-4df3-abce-e7859c8e454a"/>
+    <recordManagerType typeId="bcabd9bd-3f98-45c1-a609-1c271ba9778b" valueTypeId="1a2c7fcc-89f9-4519-a41b-1742d9995350"/>
+  </producedTypes>
+  <name>ДанныеПроизводственногоКалендаря</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:InformationRegisterExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <informationRegisterPeriodicity>Checked</informationRegisterPeriodicity>
+    <writeMode>Checked</writeMode>
+  </extension>
+  <resources uuid="c3971347-30f5-48e7-bd9c-4a4a26414195" extendedConfigurationObject="3a36e0f5-a645-47f1-99ae-5b0493d604ad">
+    <name>ВидДня</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>EnumRef.ВидыДнейПроизводственногоКалендаря</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <dimensions uuid="e7d1c107-3304-4b29-9c12-77ae6c379b36" extendedConfigurationObject="ca7d4086-de35-40fd-af65-73369d452135">
+    <name>ПроизводственныйКалендарь</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.ПроизводственныеКалендари</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </dimensions>
+  <dimensions uuid="4faedb6c-6867-4b35-b4b3-6f6922aab447" extendedConfigurationObject="563c0f5c-e0b4-4229-a3f6-183091060aa4">
+    <name>Дата</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Date</type>
+        </types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </dimensions>
+  <dimensions uuid="646527e3-1fd9-471b-8607-ea5ad7579da8" extendedConfigurationObject="bf967588-ea8f-49a3-9331-af2331ffa162">
+    <name>Год</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>4</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </dimensions>
+</mdclass:InformationRegister>
+=======
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="87b2531d-98d6-416a-a570-edec7ebb3946" extendedConfigurationObject="4a69a70d-1b4c-4999-a3dd-ae1deb331fea">
   <producedTypes>
@@ -76,3 +160,4 @@
     </extension>
   </dimensions>
 </mdclass:InformationRegister>
+>>>>>>> refs/remotes/origin/develop
