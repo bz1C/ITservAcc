@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="afcc2459-f08a-4320-ba18-d673a99c9559" extendedConfigurationObject="b9e5871f-258c-4beb-bed7-481bf362ae45">
   <producedTypes>
@@ -14,20 +13,3 @@
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
 </mdclass:Catalog>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="afcc2459-f08a-4320-ba18-d673a99c9559" extendedConfigurationObject="b9e5871f-258c-4beb-bed7-481bf362ae45">
-  <producedTypes>
-    <objectType typeId="1cc9149b-bed9-4902-ac1f-87f69c035066" valueTypeId="90ecbeb3-a208-4442-93ae-a3ef4e6e786c"/>
-    <refType typeId="c20c1da4-aed5-4010-a374-31c3314344de" valueTypeId="49ed1419-b73b-4bc3-b5a9-8939e1e85945"/>
-    <selectionType typeId="842f0daa-365e-4b6b-a502-71e9298997fc" valueTypeId="d49b83ea-9feb-4afa-8658-7294344a42c1"/>
-    <listType typeId="00ed6384-56fd-4b4f-94ad-a2752ff50d43" valueTypeId="86e692f3-c527-4c09-be6b-f59158041e9c"/>
-    <managerType typeId="79b5bd83-7f8f-490e-b228-15be9e27651b" valueTypeId="290e0034-2e3d-4b86-b29e-952fc1b52f0d"/>
-  </producedTypes>
-  <name>ДоговорыКонтрагентов</name>
-  <objectBelonging>Adopted</objectBelonging>
-  <extension xsi:type="mdclassExtension:CatalogExtension">
-    <extendedConfigurationObject>Checked</extendedConfigurationObject>
-  </extension>
-</mdclass:Catalog>
->>>>>>> refs/remotes/origin/develop

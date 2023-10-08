@@ -1,11 +1,4 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7315f559-1446-477b-8feb-8f659feec9f7">
   <name>bz_ОсновнаяРоль</name>
 </mdclass:Role>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7315f559-1446-477b-8feb-8f659feec9f7">
-  <name>bz_ОсновнаяРоль</name>
-</mdclass:Role>
->>>>>>> refs/remotes/origin/develop

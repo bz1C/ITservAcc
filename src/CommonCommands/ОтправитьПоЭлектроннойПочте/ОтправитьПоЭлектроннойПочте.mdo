@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:CommonCommand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="7648fa5e-a3bc-4e89-af2b-79d08871fd3c" extendedConfigurationObject="f3814458-36b3-42c0-881e-2f14af157182">
   <name>ОтправитьПоЭлектроннойПочте</name>
@@ -9,15 +8,3 @@
   </extension>
   <group>FormCommandBarImportant</group>
 </mdclass:CommonCommand>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:CommonCommand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="7648fa5e-a3bc-4e89-af2b-79d08871fd3c" extendedConfigurationObject="f3814458-36b3-42c0-881e-2f14af157182">
-  <name>ОтправитьПоЭлектроннойПочте</name>
-  <objectBelonging>Adopted</objectBelonging>
-  <extension xsi:type="mdclassExtension:BasicCommandExtension">
-    <extendedConfigurationObject>Checked</extendedConfigurationObject>
-    <group>Checked</group>
-  </extension>
-  <group>FormCommandBarImportant</group>
-</mdclass:CommonCommand>
->>>>>>> refs/remotes/origin/develop

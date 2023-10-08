@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="d8035ca2-c5ef-472c-9e58-bde426a7e881" extendedConfigurationObject="77149f7a-8a76-4569-9487-991c41e132ef">
   <producedTypes>
@@ -14,20 +13,3 @@
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
 </mdclass:Catalog>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="d8035ca2-c5ef-472c-9e58-bde426a7e881" extendedConfigurationObject="77149f7a-8a76-4569-9487-991c41e132ef">
-  <producedTypes>
-    <objectType typeId="9073663a-5477-4341-b8a1-a47209079f51" valueTypeId="3d26fec3-045e-4926-b4d5-76ce0daa2607"/>
-    <refType typeId="eb8f1f97-98ad-48d4-b517-54cdab5eed0d" valueTypeId="678373d0-77b2-4a4b-a1cb-0b8137961ec8"/>
-    <selectionType typeId="9e7fdd9e-6547-4097-8eac-03e5226085cf" valueTypeId="d3a90d98-0e13-4ae3-86b0-985b613ed8bc"/>
-    <listType typeId="2b00c24a-5154-4a20-b290-5324a4e8edf8" valueTypeId="d2a9e332-fd7e-4635-bc18-4d256ef2bd4a"/>
-    <managerType typeId="40c2f065-56fc-42bd-870f-8e89eab86df4" valueTypeId="1cbe938e-2892-49e0-a9a5-55fbfa8a2b6b"/>
-  </producedTypes>
-  <name>ПроизводственныеКалендари</name>
-  <objectBelonging>Adopted</objectBelonging>
-  <extension xsi:type="mdclassExtension:CatalogExtension">
-    <extendedConfigurationObject>Checked</extendedConfigurationObject>
-  </extension>
-</mdclass:Catalog>
->>>>>>> refs/remotes/origin/develop

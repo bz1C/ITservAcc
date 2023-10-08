@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d0214dcf-e9f7-42d5-816d-91829aaec46a">
   <name>bz_ОбщиеАлгоритмыУУ</name>
@@ -10,16 +9,3 @@
   <externalConnection>true</externalConnection>
   <clientOrdinaryApplication>true</clientOrdinaryApplication>
 </mdclass:CommonModule>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d0214dcf-e9f7-42d5-816d-91829aaec46a">
-  <name>bz_ОбщиеАлгоритмыУУ</name>
-  <synonym>
-    <key>ru</key>
-    <value>Общие алгоритмы УУ</value>
-  </synonym>
-  <server>true</server>
-  <externalConnection>true</externalConnection>
-  <clientOrdinaryApplication>true</clientOrdinaryApplication>
-</mdclass:CommonModule>
->>>>>>> refs/remotes/origin/develop

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:CommonCommand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="0173329d-241e-4849-bdc3-b76c4483f93b" extendedConfigurationObject="41f87891-ddd5-4e0f-a4f2-8039fb71981b">
   <name>СвязанныеДокументы</name>
@@ -9,15 +8,3 @@
   </extension>
   <group>FormCommandBarImportant</group>
 </mdclass:CommonCommand>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:CommonCommand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="0173329d-241e-4849-bdc3-b76c4483f93b" extendedConfigurationObject="41f87891-ddd5-4e0f-a4f2-8039fb71981b">
-  <name>СвязанныеДокументы</name>
-  <objectBelonging>Adopted</objectBelonging>
-  <extension xsi:type="mdclassExtension:BasicCommandExtension">
-    <extendedConfigurationObject>Checked</extendedConfigurationObject>
-    <group>Checked</group>
-  </extension>
-  <group>FormCommandBarImportant</group>
-</mdclass:CommonCommand>
->>>>>>> refs/remotes/origin/develop

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bc65cbf5-6ed0-455c-b9c9-c8a61a59d956">
   <producedTypes>
@@ -42,48 +41,3 @@
     </synonym>
   </enumValues>
 </mdclass:Enum>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bc65cbf5-6ed0-455c-b9c9-c8a61a59d956">
-  <producedTypes>
-    <refType typeId="66280fd1-4dcf-4c8a-88ee-2407f96c7259" valueTypeId="a3591960-2147-4654-888f-038555f488af"/>
-    <listType typeId="6dd63874-2dc8-437d-b7f4-41c2601dcef3" valueTypeId="adb383b8-8eb3-4130-8c33-34d1fa38b7e7"/>
-    <managerType typeId="e752c4a7-823a-4365-8e0d-3afa3f8f7eaa" valueTypeId="a518defb-90ec-430c-93c0-3daa5c3e1469"/>
-  </producedTypes>
-  <name>bz_СостоянияПроектовВПериодах</name>
-  <synonym>
-    <key>ru</key>
-    <value>Состояния проектов в отчетных периодах</value>
-  </synonym>
-  <quickChoice>true</quickChoice>
-  <choiceMode>BothWays</choiceMode>
-  <enumValues uuid="0578aa6c-eca9-45f2-ab2e-fa55a84b015a">
-    <name>Открыт</name>
-    <synonym>
-      <key>ru</key>
-      <value>Открыт</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="bb3f69f5-5a84-4acc-b21a-1b92d74a9657">
-    <name>Выставлен</name>
-    <synonym>
-      <key>ru</key>
-      <value>Выставлен</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="d3d78b2e-03cd-4a0f-a4b1-1ed9281e1ea9">
-    <name>Подтвержден</name>
-    <synonym>
-      <key>ru</key>
-      <value>Подтвержден</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="8d87a2de-f0ce-4f9a-9bc1-4100a8485efc">
-    <name>Актирован</name>
-    <synonym>
-      <key>ru</key>
-      <value>Актирован</value>
-    </synonym>
-  </enumValues>
-</mdclass:Enum>
->>>>>>> refs/remotes/origin/develop
