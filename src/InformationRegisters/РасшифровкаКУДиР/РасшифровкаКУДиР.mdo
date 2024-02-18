@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="c897f2da-85a7-4d33-bd79-4c780107fefe" extendedConfigurationObject="8ba69bdc-b763-412a-9d95-0fd1557f9906">
+  <producedTypes>
+    <selectionType typeId="2ce23c5e-28a7-4fd7-b76c-b263519eea56" valueTypeId="5913ddfa-e53b-44e8-9841-4991ebafcafd"/>
+    <listType typeId="a9471fe6-a0f9-468a-bc04-909b1a1ebd1f" valueTypeId="a6267e90-40bb-403b-ac2a-c1c1d75621bc"/>
+    <managerType typeId="f40d2626-a976-4558-a849-63946b18009f" valueTypeId="f927bd21-6029-44a0-ae75-18e5db245b18"/>
+    <recordSetType typeId="4e878184-ce29-4b0e-83b4-aa2386283119" valueTypeId="100e5fba-b62b-4cec-844a-249968b94aa9"/>
+    <recordKeyType typeId="f458632e-17c9-4cdb-955d-4baf984d7216" valueTypeId="d3e77098-ad1a-412b-baa6-3e9194a76b5a"/>
+    <recordType typeId="b738dba9-838f-4040-a586-1a6b5fdeb4cd" valueTypeId="d8e84af1-66c9-4aaf-9187-0a60ab595172"/>
+    <recordManagerType typeId="76a47eb3-546a-48af-99ce-e3dc29c903ed" valueTypeId="d823c32c-ce57-4bbf-8aec-3d5efd53d0db"/>
+  </producedTypes>
+  <name>РасшифровкаКУДиР</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:InformationRegisterExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <informationRegisterPeriodicity>Checked</informationRegisterPeriodicity>
+    <writeMode>Checked</writeMode>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+</mdclass:InformationRegister>

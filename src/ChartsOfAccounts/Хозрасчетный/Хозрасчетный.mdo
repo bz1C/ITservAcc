@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfAccounts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="f6ebc97b-ec04-48f2-96c7-dff75bfc62af" extendedConfigurationObject="3796bdf5-5d0b-4232-b22e-6d2cd8beb488">
+  <producedTypes>
+    <objectType typeId="43d96817-956a-44f5-b545-3e41ec7843b2" valueTypeId="fc2f1826-8cd2-468b-bc57-7e97e3d5e19e"/>
+    <refType typeId="a0a7d524-6998-4d7e-bc6a-888347a6876f" valueTypeId="9b801eee-f16f-4faf-99d1-e72075102582"/>
+    <selectionType typeId="abdcc835-a1bf-4e28-90d9-e88745bf2b4e" valueTypeId="9e84985e-393d-465a-8f61-fa33f820f4aa"/>
+    <listType typeId="3780b494-c4ec-4c3a-81ff-3bf6c890281a" valueTypeId="b93d19ba-ee02-44f5-a4ce-f365fe9ba761"/>
+    <managerType typeId="9c27fe83-f7ae-4077-b1ce-30310a86334e" valueTypeId="01c474d2-2375-4355-b404-5bd2178bc290"/>
+    <extDimensionTypes typeId="c18069fa-5044-49e0-9732-4ba12d53247a" valueTypeId="427a0d30-cf79-4cbd-9c79-14d1b8b05852"/>
+    <extDimensionTypesRow typeId="2d5e30bf-9014-4623-a238-079f93d508b0" valueTypeId="c1b5313c-5e6f-4c89-8b51-f5aaf79275e8"/>
+  </producedTypes>
+  <name>Хозрасчетный</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:ChartOfAccountsExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <attributes uuid="005a7c22-7a91-4623-ac0f-69c4b47f1e3b" extendedConfigurationObject="4e4bef3c-304a-4a2c-99a8-6beb69b8d035">
+    <name>ЗапретитьИспользоватьВПроводках</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Boolean</type>
+        </types>
+      </typeExtension>
+    </extension>
+  </attributes>
+  <accountingFlags uuid="7118a5d7-e334-4948-ab15-69b74c740f5b" extendedConfigurationObject="7007c02e-6e38-489a-bdb4-2da99bef0ccf">
+    <name>Количественный</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Boolean</type>
+        </types>
+      </typeExtension>
+    </extension>
+  </accountingFlags>
+</mdclass:ChartOfAccounts>

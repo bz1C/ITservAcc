@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="7008fe5d-cff1-41c7-8b3a-9661389fd190" extendedConfigurationObject="168a4862-176c-443a-ac72-9200debf98c6">
+  <producedTypes>
+    <selectionType typeId="ab35436d-9bdd-43d1-aa6b-aef2f2cde65c" valueTypeId="2297a047-2d28-4e7d-9ccd-98f50cf4d988"/>
+    <listType typeId="315f4abe-f549-4c3b-9e4e-68192f59fc5a" valueTypeId="6a03505b-449a-4c26-9df4-05100310d3d7"/>
+    <managerType typeId="45f9f85a-e65f-405e-8230-91ab14f8b28a" valueTypeId="d80377dc-ce25-44d7-adf2-65ca27d128b5"/>
+    <recordSetType typeId="5cc73b5b-6b37-4980-a6ea-082215f628f8" valueTypeId="bf4819d4-b30a-41ff-bc9a-44cc2407574a"/>
+    <recordKeyType typeId="538b1de8-f96d-4ead-aca9-4122e332ba9f" valueTypeId="9cbba705-4f97-43d5-b9d9-8972544072d7"/>
+    <recordType typeId="184f2729-d5f3-42f6-b2f6-119150fcc4f7" valueTypeId="fd7d5555-021b-4dee-a202-e8620b4e5d8e"/>
+    <recordManagerType typeId="0b38ea67-c941-4c18-96f2-82221281f30e" valueTypeId="153a6298-3374-42ed-9d95-a56f99c5936c"/>
+  </producedTypes>
+  <name>УчетнаяПолитика</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:InformationRegisterExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <informationRegisterPeriodicity>Checked</informationRegisterPeriodicity>
+    <writeMode>Checked</writeMode>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <resources uuid="761461a4-0534-40e3-beae-d9f67d6f499e" extendedConfigurationObject="309c4679-5f87-4332-9976-5cef8fbc6fa0">
+    <name>ПоддержкаПБУ18</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Boolean</type>
+        </types>
+      </typeExtension>
+    </extension>
+  </resources>
+</mdclass:InformationRegister>

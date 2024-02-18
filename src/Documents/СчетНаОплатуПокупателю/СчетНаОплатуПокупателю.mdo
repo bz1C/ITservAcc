@@ -14,8 +14,10 @@
     <objectModule>Extended</objectModule>
     <managerModule>Extended</managerModule>
     <numberType>Notify</numberType>
+    <numberLength>Notify</numberLength>
   </extension>
   <numberType>String</numberType>
+  <numberLength>11</numberLength>
   <registerRecords>AccumulationRegister.bz_РаботыКВыставлению</registerRecords>
   <attributes uuid="a8cebc62-63ef-4cf5-a72c-f2dfc6084f32" extendedConfigurationObject="08aa07ae-cd86-4d54-b490-c15802d417fc">
     <name>Организация</name>

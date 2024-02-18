@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "settings": {
+    "md-legacy-emf-check": {
+      "enabled": false
+    },
+    "form-legacy-emf-check": {
+      "enabled": false
+    }
+  }
+}

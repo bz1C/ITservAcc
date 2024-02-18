@@ -11,10 +11,13 @@
   <objectBelonging>Adopted</objectBelonging>
   <extension xsi:type="mdclassExtension:CatalogExtension">
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
-    <codeLength>Extended</codeLength>
+    <hierarchical>Checked</hierarchical>
+    <hierarchyType>Checked</hierarchyType>
+    <codeLength>Checked</codeLength>
     <codeAllowedLength>Checked</codeAllowedLength>
-    <codeType>Extended</codeType>
+    <codeType>Checked</codeType>
   </extension>
+  <hierarchical>true</hierarchical>
   <codeLength>11</codeLength>
   <codeType>String</codeType>
   <attributes uuid="dcb58e2b-13e6-414d-8560-eb5af23e7b1c" extendedConfigurationObject="cab0bf45-aad1-4dd3-9ac1-05d38250688b">
