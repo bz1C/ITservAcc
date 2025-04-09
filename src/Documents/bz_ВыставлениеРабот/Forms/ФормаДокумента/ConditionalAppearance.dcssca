@@ -48,7 +48,7 @@
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:use>false</dcscor:use>
 				<dcscor:parameter>ЦветФона</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">style:ЦветФонаНекорректногоКонтрагента</dcscor:value>
+				<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>

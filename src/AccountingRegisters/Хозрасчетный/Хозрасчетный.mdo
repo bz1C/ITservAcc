@@ -17,7 +17,6 @@
     <correspondence>Checked</correspondence>
     <periodAdjustmentLength>Checked</periodAdjustmentLength>
   </extension>
-  <useStandardCommands>true</useStandardCommands>
   <chartOfAccounts>ChartOfAccounts.Хозрасчетный</chartOfAccounts>
   <correspondence>true</correspondence>
   <periodAdjustmentLength>1</periodAdjustmentLength>
@@ -34,6 +33,7 @@
       </typeExtension>
       <balance>Checked</balance>
     </extension>
+    <type/>
     <balance>true</balance>
   </dimensions>
   <dimensions uuid="fe61a240-5a37-4e68-bcb2-8479be57f33c" extendedConfigurationObject="f59ef197-f777-4fe8-9578-0d257ec6a70c">
@@ -49,6 +49,7 @@
       </typeExtension>
       <balance>Checked</balance>
     </extension>
+    <type/>
   </dimensions>
   <dimensions uuid="7d701aea-eb9f-4f45-9821-b5b1f9a5f12c" extendedConfigurationObject="ca26a990-8c83-42b1-b897-ac03915490ea">
     <name>Подразделение</name>
@@ -63,11 +64,12 @@
       </typeExtension>
       <balance>Checked</balance>
     </extension>
+    <type/>
   </dimensions>
   <resources uuid="e4427d19-ff57-440b-9c2f-921940555c68" extendedConfigurationObject="de888dc4-f514-478b-a7c1-5118fba98e8c">
     <name>СуммаПР</name>
     <objectBelonging>Adopted</objectBelonging>
-    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+    <extension xsi:type="mdclassExtension:AccountingRegisterResourceExtension">
       <extendedConfigurationObject>Checked</extendedConfigurationObject>
       <typeExtension>
         <types>
@@ -80,11 +82,12 @@
         </numberQualifiers>
       </typeExtension>
     </extension>
+    <type/>
   </resources>
   <resources uuid="878df00b-ccda-4bc6-ad88-fcd904145136" extendedConfigurationObject="641f0869-7333-4725-ae8c-bd4097ef11a0">
     <name>СуммаНУ</name>
     <objectBelonging>Adopted</objectBelonging>
-    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+    <extension xsi:type="mdclassExtension:AccountingRegisterResourceExtension">
       <extendedConfigurationObject>Checked</extendedConfigurationObject>
       <typeExtension>
         <types>
@@ -97,11 +100,12 @@
         </numberQualifiers>
       </typeExtension>
     </extension>
+    <type/>
   </resources>
   <resources uuid="8f0c94f2-3a00-42ac-acf1-960a88191038" extendedConfigurationObject="2364dd92-2120-41b6-a6f7-008c333d706b">
     <name>ВалютнаяСумма</name>
     <objectBelonging>Adopted</objectBelonging>
-    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+    <extension xsi:type="mdclassExtension:AccountingRegisterResourceExtension">
       <extendedConfigurationObject>Checked</extendedConfigurationObject>
       <typeExtension>
         <types>
@@ -114,11 +118,12 @@
         </numberQualifiers>
       </typeExtension>
     </extension>
+    <type/>
   </resources>
   <resources uuid="0eb3170f-709a-4a5f-8dfc-c56c1dae6ad9" extendedConfigurationObject="8a21806d-dfd6-47b7-aa52-b94381ed7341">
     <name>СуммаВР</name>
     <objectBelonging>Adopted</objectBelonging>
-    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+    <extension xsi:type="mdclassExtension:AccountingRegisterResourceExtension">
       <extendedConfigurationObject>Checked</extendedConfigurationObject>
       <typeExtension>
         <types>
@@ -131,11 +136,12 @@
         </numberQualifiers>
       </typeExtension>
     </extension>
+    <type/>
   </resources>
   <resources uuid="ee522f10-0a91-4eb0-b101-c7328b59418d" extendedConfigurationObject="4b967ef5-26ee-4c92-92c6-7f93336687fd">
     <name>Количество</name>
     <objectBelonging>Adopted</objectBelonging>
-    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+    <extension xsi:type="mdclassExtension:AccountingRegisterResourceExtension">
       <extendedConfigurationObject>Checked</extendedConfigurationObject>
       <typeExtension>
         <types>
@@ -148,11 +154,12 @@
         </numberQualifiers>
       </typeExtension>
     </extension>
+    <type/>
   </resources>
   <resources uuid="fcb89fd8-f001-4b03-aeaf-9f6549b825bf" extendedConfigurationObject="3656a8da-a29d-4315-b78f-48d379d4b712">
     <name>Сумма</name>
     <objectBelonging>Adopted</objectBelonging>
-    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+    <extension xsi:type="mdclassExtension:AccountingRegisterResourceExtension">
       <extendedConfigurationObject>Checked</extendedConfigurationObject>
       <typeExtension>
         <types>
@@ -165,6 +172,7 @@
         </numberQualifiers>
       </typeExtension>
     </extension>
+    <type/>
   </resources>
   <attributes uuid="98fb7919-ed61-463d-8745-ebf7820f7db8" extendedConfigurationObject="17c87c43-ee62-4b46-a19c-f2b35f24719e">
     <name>Содержание</name>
@@ -181,6 +189,7 @@
         </stringQualifiers>
       </typeExtension>
     </extension>
+    <type/>
   </attributes>
   <attributes uuid="9cce032a-434e-44f4-9328-2e0f7322ef6a" extendedConfigurationObject="c7195cdc-df0b-4293-95e3-633c96899572">
     <name>НеКорректироватьСтоимостьАвтоматически</name>
@@ -194,5 +203,6 @@
         </types>
       </typeExtension>
     </extension>
+    <type/>
   </attributes>
 </mdclass:AccountingRegister>

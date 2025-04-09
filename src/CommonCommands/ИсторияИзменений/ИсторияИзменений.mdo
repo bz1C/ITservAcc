@@ -5,6 +5,7 @@
   <extension xsi:type="mdclassExtension:BasicCommandExtension">
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
     <group>Checked</group>
+    <commandParameterTypeExtension/>
   </extension>
   <group>FormCommandBarImportant</group>
 </mdclass:CommonCommand>

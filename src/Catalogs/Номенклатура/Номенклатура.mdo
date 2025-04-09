@@ -47,7 +47,7 @@
           <type>String</type>
         </types>
         <stringQualifiers>
-          <length>25</length>
+          <length>50</length>
         </stringQualifiers>
       </typeExtension>
     </extension>

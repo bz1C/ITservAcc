@@ -14,7 +14,6 @@
   <extension xsi:type="mdclassExtension:ChartOfAccountsExtension">
     <extendedConfigurationObject>Checked</extendedConfigurationObject>
   </extension>
-  <useStandardCommands>true</useStandardCommands>
   <attributes uuid="005a7c22-7a91-4623-ac0f-69c4b47f1e3b" extendedConfigurationObject="4e4bef3c-304a-4a2c-99a8-6beb69b8d035">
     <name>ЗапретитьИспользоватьВПроводках</name>
     <objectBelonging>Adopted</objectBelonging>
@@ -27,6 +26,7 @@
         </types>
       </typeExtension>
     </extension>
+    <type/>
   </attributes>
   <accountingFlags uuid="7118a5d7-e334-4948-ab15-69b74c740f5b" extendedConfigurationObject="7007c02e-6e38-489a-bdb4-2da99bef0ccf">
     <name>Количественный</name>
@@ -40,5 +40,6 @@
         </types>
       </typeExtension>
     </extension>
+    <type/>
   </accountingFlags>
 </mdclass:ChartOfAccounts>

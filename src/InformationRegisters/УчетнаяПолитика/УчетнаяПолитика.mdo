@@ -16,7 +16,6 @@
     <informationRegisterPeriodicity>Checked</informationRegisterPeriodicity>
     <writeMode>Checked</writeMode>
   </extension>
-  <useStandardCommands>true</useStandardCommands>
   <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
   <resources uuid="761461a4-0534-40e3-beae-d9f67d6f499e" extendedConfigurationObject="309c4679-5f87-4332-9976-5cef8fbc6fa0">
     <name>ПоддержкаПБУ18</name>
@@ -30,5 +29,6 @@
         </types>
       </typeExtension>
     </extension>
+    <type/>
   </resources>
 </mdclass:InformationRegister>
