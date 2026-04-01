@@ -21,6 +21,10 @@
 			<name>InteractiveClearDeletionMarkPredefinedData</name>
 			<value>false</value>
 		</right>
+		<right>
+			<name>InteractiveDeleteMarkedPredefinedData</name>
+			<value>false</value>
+		</right>
 	</object>
 	<object>
 		<name>Document.СчетНаОплатуПокупателю.TabularSection.bz_ВыставляемыеРаботы.Attribute.Проект</name>
@@ -60,6 +64,10 @@
 		</right>
 		<right>
 			<name>InteractiveClearDeletionMarkPredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarkedPredefinedData</name>
 			<value>false</value>
 		</right>
 	</object>
@@ -132,6 +140,10 @@
 			<name>InteractiveClearDeletionMarkPredefinedData</name>
 			<value>false</value>
 		</right>
+		<right>
+			<name>InteractiveDeleteMarkedPredefinedData</name>
+			<value>false</value>
+		</right>
 	</object>
 	<object>
 		<name>Document.СчетНаОплатуПокупателю.TabularSection.bz_ВыставляемыеРаботы.Attribute.Сумма</name>
@@ -160,6 +172,10 @@
 		</right>
 		<right>
 			<name>InteractiveClearDeletionMarkPredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarkedPredefinedData</name>
 			<value>false</value>
 		</right>
 	</object>
@@ -197,6 +213,10 @@
 		</right>
 		<right>
 			<name>InteractiveClearDeletionMarkPredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarkedPredefinedData</name>
 			<value>false</value>
 		</right>
 	</object>

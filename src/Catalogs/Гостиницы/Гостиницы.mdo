@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="a5676982-cdeb-4f62-a4c5-ca9ad91a6e71" extendedConfigurationObject="2dc7f0cf-af55-4d1e-bba4-29b4fb0c6914">
+  <producedTypes>
+    <objectType typeId="f322d290-3d4d-415c-bed5-2367d689b5e2" valueTypeId="5f22bfb8-53f3-4aae-b44e-a5d13010857e"/>
+    <refType typeId="8bbfc6e9-965f-4472-9b98-8a0e322837b2" valueTypeId="52a2e06f-f99a-4159-83a6-f38e430cea7a"/>
+    <selectionType typeId="31265767-b26a-4f4b-9c4d-c492f75feffb" valueTypeId="69daaaa5-eb50-4b88-a311-0611ae6f0f21"/>
+    <listType typeId="0e0a11e5-75c3-4907-a420-21d236ba3c58" valueTypeId="ba0c0b5f-524c-463c-b462-9bc46511ac78"/>
+    <managerType typeId="ae978062-520e-47ce-93e0-d90e112329b9" valueTypeId="77c09f82-a527-4147-8060-aae2a9004aad"/>
+  </producedTypes>
+  <name>Гостиницы</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <checkUnique>true</checkUnique>
+</mdclass:Catalog>

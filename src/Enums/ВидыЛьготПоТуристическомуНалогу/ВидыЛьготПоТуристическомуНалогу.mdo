@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="c8e03d54-0796-4ec3-8271-907770fb760c" extendedConfigurationObject="36b0cc45-0bab-4849-ab3b-32ed757b47c7">
+  <producedTypes>
+    <refType typeId="f8d3f430-ec2a-4492-b755-f44a1fcbbc7c" valueTypeId="bebe4ddf-aa66-44e4-a89f-c5344211d851"/>
+    <listType typeId="ae2749e5-dcc1-4252-8b9a-6ecc77c75c3d" valueTypeId="97565c02-eba9-4b59-a048-deebed2e45f6"/>
+    <managerType typeId="4b167425-1324-4a7d-ba05-cf5d338cb72f" valueTypeId="a80fb4f6-933d-4ca1-855f-351ac434ac7c"/>
+  </producedTypes>
+  <name>ВидыЛьготПоТуристическомуНалогу</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:EnumExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:Enum>

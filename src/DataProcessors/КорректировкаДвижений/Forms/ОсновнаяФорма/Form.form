@@ -26,7 +26,7 @@
       <autoFill>true</autoFill>
     </contextMenu>
     <type>CheckBoxField</type>
-    <editMode>EnterOnInput</editMode>
+    <editMode>Auto</editMode>
     <showInHeader>true</showInHeader>
     <headerHorizontalAlign>Left</headerHorizontalAlign>
     <showInFooter>true</showInFooter>
@@ -88,7 +88,7 @@
         </extInfo>
       </extendedTooltip>
       <type>UsualButton</type>
-      <commandName>0</commandName>
+      <buttonImportance>Normal</buttonImportance>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -236,7 +236,11 @@
       <autoMaxHeight>true</autoMaxHeight>
       <horizontalStretch>false</horizontalStretch>
       <groupVerticalAlign>Center</groupVerticalAlign>
-      <extInfo xsi:type="form:PictureDecorationExtInfo"/>
+      <extInfo xsi:type="form:PictureDecorationExtInfo">
+        <picture xsi:type="core:PictureRef">
+          <picture>CommonPicture.НезавершившаясяПроверка</picture>
+        </picture>
+      </extInfo>
     </items>
     <items xsi:type="form:Decoration">
       <name>ТекстПриАктуализации</name>
@@ -292,7 +296,7 @@
         </extInfo>
       </extendedTooltip>
       <type>UsualButton</type>
-      <commandName>0</commandName>
+      <buttonImportance>Normal</buttonImportance>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -407,7 +411,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -428,6 +432,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -456,7 +461,7 @@
             <type>InputField</type>
             <readOnly>true</readOnly>
             <horizontalAlign>Left</horizontalAlign>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
@@ -467,6 +472,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -493,7 +499,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>LabelField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:LabelFieldExtInfo">
@@ -528,7 +534,8 @@
           <type>ColumnGroup</type>
           <extInfo xsi:type="form:ColumnGroupExtInfo">
             <group>Vertical</group>
-            <showTitle>true</showTitle>
+            <showTitle>auto</showTitle>
+            <showInCard>true</showInCard>
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
@@ -561,7 +568,7 @@
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>InputField</type>
-              <editMode>EnterOnInput</editMode>
+              <editMode>Auto</editMode>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
               <extInfo xsi:type="form:InputFieldExtInfo">
@@ -579,6 +586,7 @@
                     <value xsi:type="core:BooleanValue"/>
                   </value>
                 </choiceParameters>
+                <textSize>Normal</textSize>
                 <font xsi:type="core:FontRef">
                   <font>Style.NormalTextFont</font>
                   <bold>true</bold>
@@ -602,6 +610,7 @@
                   <name>ХозрасчетныйНадписьКоличествоДт</name>
                   <id>293</id>
                   <visible>true</visible>
+                  <enabled>false</enabled>
                   <userVisible>
                     <common>true</common>
                   </userVisible>
@@ -621,7 +630,7 @@
                     <autoFill>true</autoFill>
                   </contextMenu>
                   <type>InputField</type>
-                  <editMode>EnterOnInput</editMode>
+                  <editMode>Auto</editMode>
                   <headerHorizontalAlign>Left</headerHorizontalAlign>
                   <showInFooter>true</showInFooter>
                   <extInfo xsi:type="form:InputFieldExtInfo">
@@ -636,6 +645,7 @@
                     <textColor xsi:type="core:ColorRef">
                       <color>Style.ЗаголовкиСтрокЦветТекста</color>
                     </textColor>
+                    <textSize>Normal</textSize>
                     <font xsi:type="core:FontRef">
                       <font>Style.ЗаголовкиСтрокШрифт</font>
                     </font>
@@ -665,7 +675,7 @@
                     <autoFill>true</autoFill>
                   </contextMenu>
                   <type>InputField</type>
-                  <editMode>EnterOnInput</editMode>
+                  <editMode>Auto</editMode>
                   <headerHorizontalAlign>Left</headerHorizontalAlign>
                   <showInFooter>true</showInFooter>
                   <extInfo xsi:type="form:InputFieldExtInfo">
@@ -676,6 +686,7 @@
                     <chooseType>true</chooseType>
                     <typeDomainEnabled>true</typeDomainEnabled>
                     <textEdit>true</textEdit>
+                    <textSize>Normal</textSize>
                   </extInfo>
                 </items>
                 <visible>true</visible>
@@ -703,7 +714,8 @@
                 </extendedTooltip>
                 <type>ColumnGroup</type>
                 <extInfo xsi:type="form:ColumnGroupExtInfo">
-                  <showTitle>true</showTitle>
+                  <showTitle>auto</showTitle>
+                  <showInCard>true</showInCard>
                 </extInfo>
               </items>
               <items xsi:type="form:FormGroup">
@@ -733,7 +745,7 @@
                     <autoFill>true</autoFill>
                   </contextMenu>
                   <type>InputField</type>
-                  <editMode>EnterOnInput</editMode>
+                  <editMode>Auto</editMode>
                   <headerHorizontalAlign>Left</headerHorizontalAlign>
                   <showInFooter>true</showInFooter>
                   <extInfo xsi:type="form:InputFieldExtInfo">
@@ -745,6 +757,7 @@
                     <chooseType>true</chooseType>
                     <typeDomainEnabled>true</typeDomainEnabled>
                     <textEdit>true</textEdit>
+                    <textSize>Normal</textSize>
                   </extInfo>
                 </items>
                 <items xsi:type="form:FormField">
@@ -771,7 +784,7 @@
                     <autoFill>true</autoFill>
                   </contextMenu>
                   <type>InputField</type>
-                  <editMode>EnterOnInput</editMode>
+                  <editMode>Auto</editMode>
                   <headerHorizontalAlign>Left</headerHorizontalAlign>
                   <showInFooter>true</showInFooter>
                   <extInfo xsi:type="form:InputFieldExtInfo">
@@ -782,6 +795,7 @@
                     <chooseType>true</chooseType>
                     <typeDomainEnabled>true</typeDomainEnabled>
                     <textEdit>true</textEdit>
+                    <textSize>Normal</textSize>
                   </extInfo>
                 </items>
                 <visible>true</visible>
@@ -809,7 +823,8 @@
                 </extendedTooltip>
                 <type>ColumnGroup</type>
                 <extInfo xsi:type="form:ColumnGroupExtInfo">
-                  <showTitle>true</showTitle>
+                  <showTitle>auto</showTitle>
+                  <showInCard>true</showInCard>
                 </extInfo>
               </items>
               <visible>true</visible>
@@ -838,7 +853,8 @@
               <type>ColumnGroup</type>
               <extInfo xsi:type="form:ColumnGroupExtInfo">
                 <group>Vertical</group>
-                <showTitle>true</showTitle>
+                <showTitle>auto</showTitle>
+                <showInCard>true</showInCard>
               </extInfo>
             </items>
             <visible>true</visible>
@@ -866,7 +882,8 @@
             </extendedTooltip>
             <type>ColumnGroup</type>
             <extInfo xsi:type="form:ColumnGroupExtInfo">
-              <showTitle>true</showTitle>
+              <showTitle>auto</showTitle>
+              <showInCard>true</showInCard>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -893,7 +910,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
@@ -904,6 +921,13 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <choiceParameterLinks>
+                <name>Отбор.Владелец</name>
+                <datapath xsi:type="form:DataPath">
+                  <segments>Items.Хозрасчетный.CurrentData.Организация</segments>
+                </datapath>
+              </choiceParameterLinks>
+              <textSize>Normal</textSize>
               <inputHint>
                 <key>ru</key>
                 <value>Подразделение</value>
@@ -934,7 +958,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
@@ -945,6 +969,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -971,7 +996,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
@@ -982,6 +1007,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -1008,7 +1034,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
@@ -1019,6 +1045,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <visible>true</visible>
@@ -1054,8 +1081,9 @@
           <type>ColumnGroup</type>
           <extInfo xsi:type="form:ColumnGroupExtInfo">
             <group>Vertical</group>
-            <showTitle>true</showTitle>
+            <showTitle>auto</showTitle>
             <showInHeader>true</showInHeader>
+            <showInCard>true</showInCard>
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
@@ -1088,7 +1116,7 @@
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>InputField</type>
-              <editMode>EnterOnInput</editMode>
+              <editMode>Auto</editMode>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
               <extInfo xsi:type="form:InputFieldExtInfo">
@@ -1106,6 +1134,7 @@
                     <value xsi:type="core:BooleanValue"/>
                   </value>
                 </choiceParameters>
+                <textSize>Normal</textSize>
                 <font xsi:type="core:FontRef">
                   <font>Style.NormalTextFont</font>
                   <bold>true</bold>
@@ -1129,6 +1158,7 @@
                   <name>ХозрасчетныйНадписьКоличествоКт</name>
                   <id>296</id>
                   <visible>true</visible>
+                  <enabled>false</enabled>
                   <userVisible>
                     <common>true</common>
                   </userVisible>
@@ -1148,7 +1178,7 @@
                     <autoFill>true</autoFill>
                   </contextMenu>
                   <type>InputField</type>
-                  <editMode>EnterOnInput</editMode>
+                  <editMode>Auto</editMode>
                   <headerHorizontalAlign>Left</headerHorizontalAlign>
                   <showInFooter>true</showInFooter>
                   <extInfo xsi:type="form:InputFieldExtInfo">
@@ -1163,6 +1193,7 @@
                     <textColor xsi:type="core:ColorRef">
                       <color>Style.ЗаголовкиСтрокЦветТекста</color>
                     </textColor>
+                    <textSize>Normal</textSize>
                     <font xsi:type="core:FontRef">
                       <font>Style.ЗаголовкиСтрокШрифт</font>
                     </font>
@@ -1192,7 +1223,7 @@
                     <autoFill>true</autoFill>
                   </contextMenu>
                   <type>InputField</type>
-                  <editMode>EnterOnInput</editMode>
+                  <editMode>Auto</editMode>
                   <headerHorizontalAlign>Left</headerHorizontalAlign>
                   <showInFooter>true</showInFooter>
                   <extInfo xsi:type="form:InputFieldExtInfo">
@@ -1203,6 +1234,7 @@
                     <chooseType>true</chooseType>
                     <typeDomainEnabled>true</typeDomainEnabled>
                     <textEdit>true</textEdit>
+                    <textSize>Normal</textSize>
                   </extInfo>
                 </items>
                 <visible>true</visible>
@@ -1230,7 +1262,8 @@
                 </extendedTooltip>
                 <type>ColumnGroup</type>
                 <extInfo xsi:type="form:ColumnGroupExtInfo">
-                  <showTitle>true</showTitle>
+                  <showTitle>auto</showTitle>
+                  <showInCard>true</showInCard>
                 </extInfo>
               </items>
               <items xsi:type="form:FormGroup">
@@ -1260,7 +1293,7 @@
                     <autoFill>true</autoFill>
                   </contextMenu>
                   <type>InputField</type>
-                  <editMode>EnterOnInput</editMode>
+                  <editMode>Auto</editMode>
                   <headerHorizontalAlign>Left</headerHorizontalAlign>
                   <showInFooter>true</showInFooter>
                   <extInfo xsi:type="form:InputFieldExtInfo">
@@ -1272,6 +1305,7 @@
                     <chooseType>true</chooseType>
                     <typeDomainEnabled>true</typeDomainEnabled>
                     <textEdit>true</textEdit>
+                    <textSize>Normal</textSize>
                   </extInfo>
                 </items>
                 <items xsi:type="form:FormField">
@@ -1298,7 +1332,7 @@
                     <autoFill>true</autoFill>
                   </contextMenu>
                   <type>InputField</type>
-                  <editMode>EnterOnInput</editMode>
+                  <editMode>Auto</editMode>
                   <headerHorizontalAlign>Left</headerHorizontalAlign>
                   <showInFooter>true</showInFooter>
                   <extInfo xsi:type="form:InputFieldExtInfo">
@@ -1309,6 +1343,7 @@
                     <chooseType>true</chooseType>
                     <typeDomainEnabled>true</typeDomainEnabled>
                     <textEdit>true</textEdit>
+                    <textSize>Normal</textSize>
                   </extInfo>
                 </items>
                 <visible>true</visible>
@@ -1336,7 +1371,8 @@
                 </extendedTooltip>
                 <type>ColumnGroup</type>
                 <extInfo xsi:type="form:ColumnGroupExtInfo">
-                  <showTitle>true</showTitle>
+                  <showTitle>auto</showTitle>
+                  <showInCard>true</showInCard>
                 </extInfo>
               </items>
               <visible>true</visible>
@@ -1365,7 +1401,8 @@
               <type>ColumnGroup</type>
               <extInfo xsi:type="form:ColumnGroupExtInfo">
                 <group>Vertical</group>
-                <showTitle>true</showTitle>
+                <showTitle>auto</showTitle>
+                <showInCard>true</showInCard>
               </extInfo>
             </items>
             <visible>true</visible>
@@ -1393,7 +1430,8 @@
             </extendedTooltip>
             <type>ColumnGroup</type>
             <extInfo xsi:type="form:ColumnGroupExtInfo">
-              <showTitle>true</showTitle>
+              <showTitle>auto</showTitle>
+              <showInCard>true</showInCard>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -1420,7 +1458,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
@@ -1431,6 +1469,13 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <choiceParameterLinks>
+                <name>Отбор.Владелец</name>
+                <datapath xsi:type="form:DataPath">
+                  <segments>Items.Хозрасчетный.CurrentData.Организация</segments>
+                </datapath>
+              </choiceParameterLinks>
+              <textSize>Normal</textSize>
               <inputHint>
                 <key>ru</key>
                 <value>Подразделение</value>
@@ -1465,7 +1510,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
@@ -1476,6 +1521,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -1503,7 +1549,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
@@ -1514,6 +1560,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -1541,7 +1588,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
@@ -1552,6 +1599,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <visible>true</visible>
@@ -1587,8 +1635,9 @@
           <type>ColumnGroup</type>
           <extInfo xsi:type="form:ColumnGroupExtInfo">
             <group>Vertical</group>
-            <showTitle>true</showTitle>
+            <showTitle>auto</showTitle>
             <showInHeader>true</showInHeader>
+            <showInCard>true</showInCard>
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
@@ -1618,7 +1667,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
@@ -1629,6 +1678,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
               <font xsi:type="core:FontRef">
                 <font>Style.NormalTextFont</font>
                 <bold>true</bold>
@@ -1662,7 +1712,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
@@ -1673,6 +1723,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
               <font xsi:type="core:FontRef">
                 <font>Style.СодержаниеУслугиШрифт</font>
               </font>
@@ -1717,8 +1768,9 @@
           <type>ColumnGroup</type>
           <extInfo xsi:type="form:ColumnGroupExtInfo">
             <group>Vertical</group>
-            <showTitle>true</showTitle>
+            <showTitle>auto</showTitle>
             <showInHeader>true</showInHeader>
+            <showInCard>true</showInCard>
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
@@ -1731,6 +1783,7 @@
               <name>ХозрасчетныйНадписьНУ</name>
               <id>299</id>
               <visible>true</visible>
+              <enabled>false</enabled>
               <userVisible>
                 <common>true</common>
               </userVisible>
@@ -1750,7 +1803,7 @@
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>InputField</type>
-              <editMode>EnterOnInput</editMode>
+              <editMode>Auto</editMode>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
               <extInfo xsi:type="form:InputFieldExtInfo">
@@ -1764,6 +1817,7 @@
                 <textColor xsi:type="core:ColorRef">
                   <color>Style.ЗаголовкиСтрокЦветТекста</color>
                 </textColor>
+                <textSize>Normal</textSize>
                 <font xsi:type="core:FontRef">
                   <font>Style.ЗаголовкиСтрокШрифт</font>
                 </font>
@@ -1773,6 +1827,7 @@
               <name>ХозрасчетныйНадписьПР</name>
               <id>302</id>
               <visible>true</visible>
+              <enabled>false</enabled>
               <userVisible>
                 <common>true</common>
               </userVisible>
@@ -1792,7 +1847,7 @@
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>InputField</type>
-              <editMode>EnterOnInput</editMode>
+              <editMode>Auto</editMode>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
               <extInfo xsi:type="form:InputFieldExtInfo">
@@ -1806,6 +1861,7 @@
                 <textColor xsi:type="core:ColorRef">
                   <color>Style.ЗаголовкиСтрокЦветТекста</color>
                 </textColor>
+                <textSize>Normal</textSize>
                 <font xsi:type="core:FontRef">
                   <font>Style.ЗаголовкиСтрокШрифт</font>
                 </font>
@@ -1815,6 +1871,7 @@
               <name>ХозрасчетныйНадписьВР</name>
               <id>305</id>
               <visible>true</visible>
+              <enabled>false</enabled>
               <userVisible>
                 <common>true</common>
               </userVisible>
@@ -1834,7 +1891,7 @@
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>InputField</type>
-              <editMode>EnterOnInput</editMode>
+              <editMode>Auto</editMode>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
               <extInfo xsi:type="form:InputFieldExtInfo">
@@ -1848,6 +1905,7 @@
                 <textColor xsi:type="core:ColorRef">
                   <color>Style.ЗаголовкиСтрокЦветТекста</color>
                 </textColor>
+                <textSize>Normal</textSize>
                 <font xsi:type="core:FontRef">
                   <font>Style.ЗаголовкиСтрокШрифт</font>
                 </font>
@@ -1880,6 +1938,7 @@
             <extInfo xsi:type="form:ColumnGroupExtInfo">
               <group>Vertical</group>
               <showInHeader>true</showInHeader>
+              <showInCard>true</showInCard>
             </extInfo>
           </items>
           <items xsi:type="form:FormGroup">
@@ -1909,7 +1968,7 @@
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>InputField</type>
-              <editMode>EnterOnInput</editMode>
+              <editMode>Auto</editMode>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
               <extInfo xsi:type="form:InputFieldExtInfo">
@@ -1920,6 +1979,7 @@
                 <chooseType>true</chooseType>
                 <typeDomainEnabled>true</typeDomainEnabled>
                 <textEdit>true</textEdit>
+                <textSize>Normal</textSize>
               </extInfo>
             </items>
             <items xsi:type="form:FormField">
@@ -1946,7 +2006,7 @@
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>InputField</type>
-              <editMode>EnterOnInput</editMode>
+              <editMode>Auto</editMode>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
               <extInfo xsi:type="form:InputFieldExtInfo">
@@ -1957,6 +2017,7 @@
                 <chooseType>true</chooseType>
                 <typeDomainEnabled>true</typeDomainEnabled>
                 <textEdit>true</textEdit>
+                <textSize>Normal</textSize>
               </extInfo>
             </items>
             <items xsi:type="form:FormField">
@@ -1983,7 +2044,7 @@
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>InputField</type>
-              <editMode>EnterOnInput</editMode>
+              <editMode>Auto</editMode>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
               <extInfo xsi:type="form:InputFieldExtInfo">
@@ -1994,6 +2055,7 @@
                 <chooseType>true</chooseType>
                 <typeDomainEnabled>true</typeDomainEnabled>
                 <textEdit>true</textEdit>
+                <textSize>Normal</textSize>
               </extInfo>
             </items>
             <visible>true</visible>
@@ -2025,8 +2087,9 @@
             <type>ColumnGroup</type>
             <extInfo xsi:type="form:ColumnGroupExtInfo">
               <group>Vertical</group>
-              <showTitle>true</showTitle>
+              <showTitle>auto</showTitle>
               <showInHeader>true</showInHeader>
+              <showInCard>true</showInCard>
             </extInfo>
           </items>
           <items xsi:type="form:FormGroup">
@@ -2056,7 +2119,7 @@
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>InputField</type>
-              <editMode>EnterOnInput</editMode>
+              <editMode>Auto</editMode>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
               <extInfo xsi:type="form:InputFieldExtInfo">
@@ -2067,6 +2130,7 @@
                 <chooseType>true</chooseType>
                 <typeDomainEnabled>true</typeDomainEnabled>
                 <textEdit>true</textEdit>
+                <textSize>Normal</textSize>
               </extInfo>
             </items>
             <items xsi:type="form:FormField">
@@ -2093,7 +2157,7 @@
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>InputField</type>
-              <editMode>EnterOnInput</editMode>
+              <editMode>Auto</editMode>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
               <extInfo xsi:type="form:InputFieldExtInfo">
@@ -2104,6 +2168,7 @@
                 <chooseType>true</chooseType>
                 <typeDomainEnabled>true</typeDomainEnabled>
                 <textEdit>true</textEdit>
+                <textSize>Normal</textSize>
               </extInfo>
             </items>
             <items xsi:type="form:FormField">
@@ -2130,7 +2195,7 @@
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>InputField</type>
-              <editMode>EnterOnInput</editMode>
+              <editMode>Auto</editMode>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
               <extInfo xsi:type="form:InputFieldExtInfo">
@@ -2141,6 +2206,7 @@
                 <chooseType>true</chooseType>
                 <typeDomainEnabled>true</typeDomainEnabled>
                 <textEdit>true</textEdit>
+                <textSize>Normal</textSize>
               </extInfo>
             </items>
             <visible>true</visible>
@@ -2172,8 +2238,9 @@
             <type>ColumnGroup</type>
             <extInfo xsi:type="form:ColumnGroupExtInfo">
               <group>Vertical</group>
-              <showTitle>true</showTitle>
+              <showTitle>auto</showTitle>
               <showInHeader>true</showInHeader>
+              <showInCard>true</showInCard>
             </extInfo>
           </items>
           <visible>true</visible>
@@ -2201,7 +2268,8 @@
           </extendedTooltip>
           <type>ColumnGroup</type>
           <extInfo xsi:type="form:ColumnGroupExtInfo">
-            <showTitle>true</showTitle>
+            <showTitle>auto</showTitle>
+            <showInCard>true</showInCard>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -2232,7 +2300,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>CheckBoxField</type>
-          <editMode>EnterOnInput</editMode>
+          <editMode>Auto</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -2259,7 +2327,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>0</commandName>
+            <buttonImportance>Normal</buttonImportance>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -2370,6 +2438,7 @@
         <verticalScrollBar>AutoUse</verticalScrollBar>
         <horizontalLines>true</horizontalLines>
         <verticalLines>true</verticalLines>
+        <useAlternationRowColorBWA>false</useAlternationRowColorBWA>
         <autoInsertNewRow>true</autoInsertNewRow>
         <searchOnInput>Auto</searchOnInput>
         <initialListView>Auto</initialListView>
@@ -2380,6 +2449,7 @@
         <searchStringLocation>None</searchStringLocation>
         <viewStatusLocation>None</viewStatusLocation>
         <searchControlLocation>None</searchControlLocation>
+        <autoMaxCardHeight>true</autoMaxCardHeight>
         <rowFilter xsi:type="core:UndefinedValue"/>
       </items>
       <visible>true</visible>
@@ -2407,7 +2477,11 @@
           <picture>CommonPicture.ЖурналПроводок</picture>
         </picture>
         <group>Vertical</group>
-        <showTitle>true</showTitle>
+        <showTitle>auto</showTitle>
+        <titleDataPath xsi:type="form:DataPath">
+          <segments>ХозрасчетныйНаборЗаписей.RowsCount</segments>
+        </titleDataPath>
+        <scrollOnCompress>false</scrollOnCompress>
       </extInfo>
     </items>
     <items xsi:type="form:FormGroup">
@@ -2446,7 +2520,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>LabelField</type>
-          <editMode>EnterOnInput</editMode>
+          <editMode>Auto</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -2480,7 +2554,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>EnterOnInput</editMode>
+          <editMode>Auto</editMode>
           <autoCellHeight>true</autoCellHeight>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
@@ -2494,6 +2568,7 @@
             <chooseType>true</chooseType>
             <typeDomainEnabled>true</typeDomainEnabled>
             <textEdit>true</textEdit>
+            <textSize>Normal</textSize>
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
@@ -2527,7 +2602,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -2538,6 +2613,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -2572,7 +2648,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -2583,6 +2659,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <visible>true</visible>
@@ -2611,7 +2688,8 @@
           <type>ColumnGroup</type>
           <extInfo xsi:type="form:ColumnGroupExtInfo">
             <group>Vertical</group>
-            <showTitle>true</showTitle>
+            <showTitle>auto</showTitle>
+            <showInCard>true</showInCard>
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
@@ -2645,7 +2723,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -2656,6 +2734,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -2686,7 +2765,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -2698,6 +2777,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <visible>true</visible>
@@ -2726,7 +2806,8 @@
           <type>ColumnGroup</type>
           <extInfo xsi:type="form:ColumnGroupExtInfo">
             <group>Vertical</group>
-            <showTitle>true</showTitle>
+            <showTitle>auto</showTitle>
+            <showInCard>true</showInCard>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -2753,7 +2834,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>EnterOnInput</editMode>
+          <editMode>Auto</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -2765,6 +2846,7 @@
             <chooseType>true</chooseType>
             <typeDomainEnabled>true</typeDomainEnabled>
             <textEdit>true</textEdit>
+            <textSize>Normal</textSize>
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
@@ -2798,7 +2880,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -2810,6 +2892,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -2840,7 +2923,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -2852,6 +2935,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <visible>true</visible>
@@ -2880,7 +2964,8 @@
           <type>ColumnGroup</type>
           <extInfo xsi:type="form:ColumnGroupExtInfo">
             <group>Vertical</group>
-            <showTitle>true</showTitle>
+            <showTitle>auto</showTitle>
+            <showInCard>true</showInCard>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -2907,7 +2992,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>EnterOnInput</editMode>
+          <editMode>Auto</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -2919,6 +3004,7 @@
             <chooseType>true</chooseType>
             <typeDomainEnabled>true</typeDomainEnabled>
             <textEdit>true</textEdit>
+            <textSize>Normal</textSize>
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
@@ -2948,7 +3034,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -2960,6 +3046,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -2994,7 +3081,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -3006,6 +3093,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <visible>true</visible>
@@ -3034,7 +3122,8 @@
           <type>ColumnGroup</type>
           <extInfo xsi:type="form:ColumnGroupExtInfo">
             <group>Vertical</group>
-            <showTitle>true</showTitle>
+            <showTitle>auto</showTitle>
+            <showInCard>true</showInCard>
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
@@ -3067,7 +3156,7 @@
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>InputField</type>
-              <editMode>EnterOnInput</editMode>
+              <editMode>Auto</editMode>
               <showInHeader>true</showInHeader>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
@@ -3079,6 +3168,7 @@
                 <chooseType>true</chooseType>
                 <typeDomainEnabled>true</typeDomainEnabled>
                 <textEdit>true</textEdit>
+                <textSize>Normal</textSize>
               </extInfo>
             </items>
             <items xsi:type="form:FormField">
@@ -3105,7 +3195,7 @@
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>InputField</type>
-              <editMode>EnterOnInput</editMode>
+              <editMode>Auto</editMode>
               <showInHeader>true</showInHeader>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
@@ -3117,6 +3207,7 @@
                 <chooseType>true</chooseType>
                 <typeDomainEnabled>true</typeDomainEnabled>
                 <textEdit>true</textEdit>
+                <textSize>Normal</textSize>
               </extInfo>
             </items>
             <visible>true</visible>
@@ -3144,7 +3235,8 @@
             </extendedTooltip>
             <type>ColumnGroup</type>
             <extInfo xsi:type="form:ColumnGroupExtInfo">
-              <showTitle>true</showTitle>
+              <showTitle>auto</showTitle>
+              <showInCard>true</showInCard>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -3171,7 +3263,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -3183,6 +3275,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <visible>true</visible>
@@ -3211,7 +3304,8 @@
           <type>ColumnGroup</type>
           <extInfo xsi:type="form:ColumnGroupExtInfo">
             <group>Vertical</group>
-            <showTitle>true</showTitle>
+            <showTitle>auto</showTitle>
+            <showInCard>true</showInCard>
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
@@ -3241,7 +3335,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -3252,6 +3346,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -3278,7 +3373,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -3289,6 +3384,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <visible>true</visible>
@@ -3317,7 +3413,8 @@
           <type>ColumnGroup</type>
           <extInfo xsi:type="form:ColumnGroupExtInfo">
             <group>Vertical</group>
-            <showTitle>true</showTitle>
+            <showTitle>auto</showTitle>
+            <showInCard>true</showInCard>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -3344,7 +3441,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>EnterOnInput</editMode>
+          <editMode>Auto</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -3355,6 +3452,7 @@
             <chooseType>true</chooseType>
             <typeDomainEnabled>true</typeDomainEnabled>
             <textEdit>true</textEdit>
+            <textSize>Normal</textSize>
           </extInfo>
         </items>
         <autoCommandBar>
@@ -3378,7 +3476,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>0</commandName>
+            <buttonImportance>Normal</buttonImportance>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -3489,6 +3587,7 @@
         <verticalScrollBar>AutoUse</verticalScrollBar>
         <horizontalLines>true</horizontalLines>
         <verticalLines>true</verticalLines>
+        <useAlternationRowColorBWA>false</useAlternationRowColorBWA>
         <autoInsertNewRow>true</autoInsertNewRow>
         <searchOnInput>Auto</searchOnInput>
         <initialListView>Auto</initialListView>
@@ -3502,6 +3601,7 @@
         <searchStringLocation>None</searchStringLocation>
         <viewStatusLocation>None</viewStatusLocation>
         <searchControlLocation>None</searchControlLocation>
+        <autoMaxCardHeight>true</autoMaxCardHeight>
         <rowFilter xsi:type="core:UndefinedValue"/>
       </items>
       <visible>true</visible>
@@ -3526,7 +3626,11 @@
       <type>Page</type>
       <extInfo xsi:type="form:PageGroupExtInfo">
         <group>Vertical</group>
-        <showTitle>true</showTitle>
+        <showTitle>auto</showTitle>
+        <titleDataPath xsi:type="form:DataPath">
+          <segments>КнигаУчетаДоходовИРасходовНаборЗаписей.RowsCount</segments>
+        </titleDataPath>
+        <scrollOnCompress>false</scrollOnCompress>
       </extInfo>
     </items>
     <items xsi:type="form:FormGroup">
@@ -3565,7 +3669,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>LabelField</type>
-          <editMode>EnterOnInput</editMode>
+          <editMode>Auto</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -3599,7 +3703,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>EnterOnInput</editMode>
+          <editMode>Auto</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -3611,6 +3715,7 @@
             <chooseType>true</chooseType>
             <typeDomainEnabled>true</typeDomainEnabled>
             <textEdit>true</textEdit>
+            <textSize>Normal</textSize>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -3637,7 +3742,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>EnterOnInput</editMode>
+          <editMode>Auto</editMode>
           <autoCellHeight>true</autoCellHeight>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
@@ -3651,6 +3756,7 @@
             <chooseType>true</chooseType>
             <typeDomainEnabled>true</typeDomainEnabled>
             <textEdit>true</textEdit>
+            <textSize>Normal</textSize>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -3677,7 +3783,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>EnterOnInput</editMode>
+          <editMode>Auto</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -3689,6 +3795,7 @@
             <chooseType>true</chooseType>
             <typeDomainEnabled>true</typeDomainEnabled>
             <textEdit>true</textEdit>
+            <textSize>Normal</textSize>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -3715,7 +3822,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>EnterOnInput</editMode>
+          <editMode>Auto</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -3727,6 +3834,7 @@
             <chooseType>true</chooseType>
             <typeDomainEnabled>true</typeDomainEnabled>
             <textEdit>true</textEdit>
+            <textSize>Normal</textSize>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -3753,7 +3861,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>EnterOnInput</editMode>
+          <editMode>Auto</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -3765,6 +3873,7 @@
             <chooseType>true</chooseType>
             <typeDomainEnabled>true</typeDomainEnabled>
             <textEdit>true</textEdit>
+            <textSize>Normal</textSize>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -3791,7 +3900,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>EnterOnInput</editMode>
+          <editMode>Auto</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -3802,6 +3911,7 @@
             <chooseType>true</chooseType>
             <typeDomainEnabled>true</typeDomainEnabled>
             <textEdit>true</textEdit>
+            <textSize>Normal</textSize>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -3836,7 +3946,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>EnterOnInput</editMode>
+          <editMode>Auto</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -3848,6 +3958,7 @@
             <chooseType>true</chooseType>
             <typeDomainEnabled>true</typeDomainEnabled>
             <textEdit>true</textEdit>
+            <textSize>Normal</textSize>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -3882,7 +3993,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>EnterOnInput</editMode>
+          <editMode>Auto</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -3894,6 +4005,7 @@
             <chooseType>true</chooseType>
             <typeDomainEnabled>true</typeDomainEnabled>
             <textEdit>true</textEdit>
+            <textSize>Normal</textSize>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -3920,7 +4032,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>EnterOnInput</editMode>
+          <editMode>Auto</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -3932,6 +4044,7 @@
             <chooseType>true</chooseType>
             <typeDomainEnabled>true</typeDomainEnabled>
             <textEdit>true</textEdit>
+            <textSize>Normal</textSize>
           </extInfo>
         </items>
         <autoCommandBar>
@@ -3955,7 +4068,7 @@
                 <horizontalAlign>Left</horizontalAlign>
               </extInfo>
             </extendedTooltip>
-            <commandName>0</commandName>
+            <buttonImportance>Normal</buttonImportance>
             <representation>Auto</representation>
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
@@ -4066,6 +4179,7 @@
         <verticalScrollBar>AutoUse</verticalScrollBar>
         <horizontalLines>true</horizontalLines>
         <verticalLines>true</verticalLines>
+        <useAlternationRowColorBWA>false</useAlternationRowColorBWA>
         <autoInsertNewRow>true</autoInsertNewRow>
         <searchOnInput>Auto</searchOnInput>
         <initialListView>Auto</initialListView>
@@ -4079,6 +4193,7 @@
         <searchStringLocation>None</searchStringLocation>
         <viewStatusLocation>None</viewStatusLocation>
         <searchControlLocation>None</searchControlLocation>
+        <autoMaxCardHeight>true</autoMaxCardHeight>
         <rowFilter xsi:type="core:UndefinedValue"/>
       </items>
       <visible>true</visible>
@@ -4103,7 +4218,11 @@
       <type>Page</type>
       <extInfo xsi:type="form:PageGroupExtInfo">
         <group>Vertical</group>
-        <showTitle>true</showTitle>
+        <showTitle>auto</showTitle>
+        <titleDataPath xsi:type="form:DataPath">
+          <segments>РасшифровкаКУДиРНаборЗаписей.RowsCount</segments>
+        </titleDataPath>
+        <scrollOnCompress>false</scrollOnCompress>
       </extInfo>
     </items>
     <items xsi:type="form:FormGroup">
@@ -4142,7 +4261,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>LabelField</type>
-          <editMode>EnterOnInput</editMode>
+          <editMode>Auto</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -4179,7 +4298,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -4191,6 +4310,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -4217,7 +4337,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -4229,6 +4349,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -4255,7 +4376,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -4267,6 +4388,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -4293,7 +4415,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -4305,6 +4427,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <visible>true</visible>
@@ -4333,6 +4456,7 @@
           <type>ColumnGroup</type>
           <extInfo xsi:type="form:ColumnGroupExtInfo">
             <group>Vertical</group>
+            <showInCard>true</showInCard>
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
@@ -4362,7 +4486,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -4374,6 +4498,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -4400,7 +4525,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -4412,6 +4537,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -4438,7 +4564,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -4450,6 +4576,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -4476,7 +4603,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -4488,6 +4615,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <visible>true</visible>
@@ -4516,7 +4644,8 @@
           <type>ColumnGroup</type>
           <extInfo xsi:type="form:ColumnGroupExtInfo">
             <group>Vertical</group>
-            <showTitle>true</showTitle>
+            <showTitle>auto</showTitle>
+            <showInCard>true</showInCard>
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
@@ -4546,7 +4675,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -4558,6 +4687,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -4584,7 +4714,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -4596,6 +4726,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -4622,7 +4753,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -4633,6 +4764,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <visible>true</visible>
@@ -4661,7 +4793,8 @@
           <type>ColumnGroup</type>
           <extInfo xsi:type="form:ColumnGroupExtInfo">
             <group>Vertical</group>
-            <showTitle>true</showTitle>
+            <showTitle>auto</showTitle>
+            <showInCard>true</showInCard>
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
@@ -4691,7 +4824,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -4703,6 +4836,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -4729,7 +4863,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -4741,6 +4875,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormGroup">
@@ -4770,7 +4905,7 @@
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>InputField</type>
-              <editMode>EnterOnInput</editMode>
+              <editMode>Auto</editMode>
               <showInHeader>true</showInHeader>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
@@ -4782,6 +4917,7 @@
                 <chooseType>true</chooseType>
                 <typeDomainEnabled>true</typeDomainEnabled>
                 <textEdit>true</textEdit>
+                <textSize>Normal</textSize>
               </extInfo>
             </items>
             <items xsi:type="form:FormField">
@@ -4808,7 +4944,7 @@
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>InputField</type>
-              <editMode>EnterOnInput</editMode>
+              <editMode>Auto</editMode>
               <showInHeader>true</showInHeader>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
@@ -4820,6 +4956,7 @@
                 <chooseType>true</chooseType>
                 <typeDomainEnabled>true</typeDomainEnabled>
                 <textEdit>true</textEdit>
+                <textSize>Normal</textSize>
               </extInfo>
             </items>
             <visible>true</visible>
@@ -4847,7 +4984,8 @@
             </extendedTooltip>
             <type>ColumnGroup</type>
             <extInfo xsi:type="form:ColumnGroupExtInfo">
-              <showTitle>true</showTitle>
+              <showTitle>auto</showTitle>
+              <showInCard>true</showInCard>
             </extInfo>
           </items>
           <visible>true</visible>
@@ -4876,7 +5014,8 @@
           <type>ColumnGroup</type>
           <extInfo xsi:type="form:ColumnGroupExtInfo">
             <group>Vertical</group>
-            <showTitle>true</showTitle>
+            <showTitle>auto</showTitle>
+            <showInCard>true</showInCard>
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
@@ -4906,7 +5045,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -4918,6 +5057,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormGroup">
@@ -4947,7 +5087,7 @@
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>InputField</type>
-              <editMode>EnterOnInput</editMode>
+              <editMode>Auto</editMode>
               <showInHeader>true</showInHeader>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
@@ -4959,6 +5099,7 @@
                 <chooseType>true</chooseType>
                 <typeDomainEnabled>true</typeDomainEnabled>
                 <textEdit>true</textEdit>
+                <textSize>Normal</textSize>
               </extInfo>
             </items>
             <items xsi:type="form:FormField">
@@ -4985,7 +5126,7 @@
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>InputField</type>
-              <editMode>EnterOnInput</editMode>
+              <editMode>Auto</editMode>
               <showInHeader>true</showInHeader>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
@@ -4997,6 +5138,7 @@
                 <chooseType>true</chooseType>
                 <typeDomainEnabled>true</typeDomainEnabled>
                 <textEdit>true</textEdit>
+                <textSize>Normal</textSize>
               </extInfo>
             </items>
             <visible>true</visible>
@@ -5024,7 +5166,8 @@
             </extendedTooltip>
             <type>ColumnGroup</type>
             <extInfo xsi:type="form:ColumnGroupExtInfo">
-              <showTitle>true</showTitle>
+              <showTitle>auto</showTitle>
+              <showInCard>true</showInCard>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -5051,7 +5194,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -5063,6 +5206,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -5089,7 +5233,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -5101,6 +5245,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -5127,7 +5272,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -5139,6 +5284,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <visible>true</visible>
@@ -5167,7 +5313,8 @@
           <type>ColumnGroup</type>
           <extInfo xsi:type="form:ColumnGroupExtInfo">
             <group>Vertical</group>
-            <showTitle>true</showTitle>
+            <showTitle>auto</showTitle>
+            <showInCard>true</showInCard>
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
@@ -5197,7 +5344,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -5209,6 +5356,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -5235,7 +5383,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -5247,6 +5395,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <visible>true</visible>
@@ -5275,7 +5424,8 @@
           <type>ColumnGroup</type>
           <extInfo xsi:type="form:ColumnGroupExtInfo">
             <group>Vertical</group>
-            <showTitle>true</showTitle>
+            <showTitle>auto</showTitle>
+            <showInCard>true</showInCard>
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
@@ -5305,7 +5455,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -5317,6 +5467,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -5343,7 +5494,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -5355,6 +5506,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -5381,7 +5533,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -5393,6 +5545,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -5419,7 +5572,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -5431,6 +5584,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <visible>true</visible>
@@ -5459,7 +5613,8 @@
           <type>ColumnGroup</type>
           <extInfo xsi:type="form:ColumnGroupExtInfo">
             <group>Vertical</group>
-            <showTitle>true</showTitle>
+            <showTitle>auto</showTitle>
+            <showInCard>true</showInCard>
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
@@ -5489,7 +5644,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -5501,6 +5656,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -5527,7 +5683,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -5539,6 +5695,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -5565,7 +5722,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -5577,6 +5734,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -5603,7 +5761,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -5615,6 +5773,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <visible>true</visible>
@@ -5643,7 +5802,8 @@
           <type>ColumnGroup</type>
           <extInfo xsi:type="form:ColumnGroupExtInfo">
             <group>Vertical</group>
-            <showTitle>true</showTitle>
+            <showTitle>auto</showTitle>
+            <showInCard>true</showInCard>
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
@@ -5673,7 +5833,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -5685,6 +5845,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -5711,7 +5872,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -5723,6 +5884,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -5749,7 +5911,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -5761,6 +5923,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -5787,7 +5950,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -5799,6 +5962,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <visible>true</visible>
@@ -5827,7 +5991,8 @@
           <type>ColumnGroup</type>
           <extInfo xsi:type="form:ColumnGroupExtInfo">
             <group>Vertical</group>
-            <showTitle>true</showTitle>
+            <showTitle>auto</showTitle>
+            <showInCard>true</showInCard>
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
@@ -5857,7 +6022,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -5869,6 +6034,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -5895,7 +6061,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -5907,6 +6073,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormGroup">
@@ -5936,7 +6103,7 @@
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>InputField</type>
-              <editMode>EnterOnInput</editMode>
+              <editMode>Auto</editMode>
               <showInHeader>true</showInHeader>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
@@ -5948,6 +6115,7 @@
                 <chooseType>true</chooseType>
                 <typeDomainEnabled>true</typeDomainEnabled>
                 <textEdit>true</textEdit>
+                <textSize>Normal</textSize>
               </extInfo>
             </items>
             <items xsi:type="form:FormField">
@@ -5974,7 +6142,7 @@
                 <autoFill>true</autoFill>
               </contextMenu>
               <type>InputField</type>
-              <editMode>EnterOnInput</editMode>
+              <editMode>Auto</editMode>
               <showInHeader>true</showInHeader>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
@@ -5986,6 +6154,7 @@
                 <chooseType>true</chooseType>
                 <typeDomainEnabled>true</typeDomainEnabled>
                 <textEdit>true</textEdit>
+                <textSize>Normal</textSize>
               </extInfo>
             </items>
             <visible>true</visible>
@@ -6013,7 +6182,8 @@
             </extendedTooltip>
             <type>ColumnGroup</type>
             <extInfo xsi:type="form:ColumnGroupExtInfo">
-              <showTitle>true</showTitle>
+              <showTitle>auto</showTitle>
+              <showInCard>true</showInCard>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -6040,7 +6210,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -6052,6 +6222,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -6078,7 +6249,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>CheckBoxField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -6110,7 +6281,8 @@
           <type>ColumnGroup</type>
           <extInfo xsi:type="form:ColumnGroupExtInfo">
             <group>Vertical</group>
-            <showTitle>true</showTitle>
+            <showTitle>auto</showTitle>
+            <showInCard>true</showInCard>
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
@@ -6140,7 +6312,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -6152,6 +6324,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -6178,7 +6351,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>CheckBoxField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -6208,7 +6381,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -6220,6 +6393,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -6246,7 +6420,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -6258,6 +6432,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <items xsi:type="form:FormField">
@@ -6284,7 +6459,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -6295,6 +6470,7 @@
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
               <textEdit>true</textEdit>
+              <textSize>Normal</textSize>
             </extInfo>
           </items>
           <visible>true</visible>
@@ -6323,7 +6499,8 @@
           <type>ColumnGroup</type>
           <extInfo xsi:type="form:ColumnGroupExtInfo">
             <group>Vertical</group>
-            <showTitle>true</showTitle>
+            <showTitle>auto</showTitle>
+            <showInCard>true</showInCard>
           </extInfo>
         </items>
         <items xsi:type="form:FormGroup">
@@ -6353,7 +6530,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>CheckBoxField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -6383,7 +6560,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>CheckBoxField</type>
-            <editMode>EnterOnInput</editMode>
+            <editMode>Auto</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
@@ -6415,7 +6592,8 @@
           <type>ColumnGroup</type>
           <extInfo xsi:type="form:ColumnGroupExtInfo">
             <group>Vertical</group>
-            <showTitle>true</showTitle>
+            <showTitle>auto</showTitle>
+            <showInCard>true</showInCard>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -6443,7 +6621,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>EnterOnInput</editMode>
+          <editMode>Auto</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -6455,6 +6633,7 @@
             <chooseType>true</chooseType>
             <typeDomainEnabled>true</typeDomainEnabled>
             <textEdit>true</textEdit>
+            <textSize>Normal</textSize>
           </extInfo>
         </items>
         <autoCommandBar>
@@ -6563,6 +6742,7 @@
         <verticalScrollBar>AutoUse</verticalScrollBar>
         <horizontalLines>true</horizontalLines>
         <verticalLines>true</verticalLines>
+        <useAlternationRowColorBWA>false</useAlternationRowColorBWA>
         <autoInsertNewRow>true</autoInsertNewRow>
         <searchOnInput>Auto</searchOnInput>
         <initialListView>Auto</initialListView>
@@ -6570,6 +6750,7 @@
         <verticalStretch>true</verticalStretch>
         <enableStartDrag>true</enableStartDrag>
         <enableDrag>true</enableDrag>
+        <autoMaxCardHeight>true</autoMaxCardHeight>
         <rowFilter xsi:type="core:UndefinedValue"/>
       </items>
       <visible>true</visible>
@@ -6598,7 +6779,11 @@
       <type>Page</type>
       <extInfo xsi:type="form:PageGroupExtInfo">
         <group>Vertical</group>
-        <showTitle>true</showTitle>
+        <showTitle>auto</showTitle>
+        <titleDataPath xsi:type="form:DataPath">
+          <segments>ЖурналУчетаСчетовФактурНаборЗаписей.RowsCount</segments>
+        </titleDataPath>
+        <scrollOnCompress>false</scrollOnCompress>
       </extInfo>
     </items>
     <visible>true</visible>
@@ -6653,7 +6838,6 @@
           <horizontalAlign>Left</horizontalAlign>
         </extInfo>
       </extendedTooltip>
-      <commandName>0</commandName>
       <representation>Auto</representation>
       <defaultButton>true</defaultButton>
       <autoMaxWidth>true</autoMaxWidth>
@@ -6679,7 +6863,7 @@
           <horizontalAlign>Left</horizontalAlign>
         </extInfo>
       </extendedTooltip>
-      <commandName>0</commandName>
+      <buttonImportance>Normal</buttonImportance>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -6705,7 +6889,7 @@
           <horizontalAlign>Left</horizontalAlign>
         </extInfo>
       </extendedTooltip>
-      <commandName>0</commandName>
+      <buttonImportance>Normal</buttonImportance>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -6733,6 +6917,7 @@
         </extInfo>
       </extendedTooltip>
       <commandName>0</commandName>
+      <buttonImportance>Normal</buttonImportance>
       <representation>Auto</representation>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -6742,13 +6927,14 @@
     <horizontalAlign>Left</horizontalAlign>
     <autoFill>true</autoFill>
   </autoCommandBar>
+  <windowOpeningMode>DontBlock</windowOpeningMode>
   <saveWindowSettings>true</saveWindowSettings>
   <autoUrl>true</autoUrl>
   <group>Vertical</group>
   <autoFillCheck>true</autoFillCheck>
   <allowFormCustomize>true</allowFormCustomize>
   <enabled>true</enabled>
-  <showTitle>true</showTitle>
+  <showTitle>auto</showTitle>
   <showCloseButton>true</showCloseButton>
   <attributes>
     <name>ДокументДвижений</name>

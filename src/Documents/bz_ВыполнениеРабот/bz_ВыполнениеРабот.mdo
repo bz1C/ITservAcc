@@ -18,12 +18,25 @@
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Выполнение работ</value>
+  </objectPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Выполненные работы</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Регистрирует выполненные работы в натуральных показателях (часах), являющиеся основанием для выставления контрагенту</value>
+  </explanation>
   <numberType>String</numberType>
   <numberLength>9</numberLength>
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.bz_ВыполнениеРабот.Form.ФормаДокумента</defaultObjectForm>
+  <realTimePosting>Deny</realTimePosting>
   <registerRecords>AccumulationRegister.bz_РаботыКВыставлению</registerRecords>
   <registerRecords>AccumulationRegister.bz_Выработка</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
