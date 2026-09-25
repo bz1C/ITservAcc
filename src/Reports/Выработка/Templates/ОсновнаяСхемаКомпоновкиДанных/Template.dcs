@@ -622,6 +622,13 @@
 						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 					</dcsset:item>
 				</dcsset:groupItems>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Трудозатраты</dcsset:left>
+						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
 				<dcsset:order>
 					<dcsset:item xsi:type="dcsset:OrderItemField">
 						<dcsset:field>Период</dcsset:field>
@@ -637,6 +644,8 @@
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
 				</dcsset:selection>
+				<dcsset:conditionalAppearance>
+				</dcsset:conditionalAppearance>
 				<dcsset:outputParameters>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:parameter>Заголовок</dcscor:parameter>
@@ -646,6 +655,10 @@
 								<v8:content>Расшифровка трудозатрат по дням</v8:content>
 							</v8:item>
 						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
 					</dcscor:item>
 				</dcsset:outputParameters>
 				<dcsset:item xsi:type="dcsset:StructureItemGroup">
@@ -668,6 +681,8 @@
 						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
 					</dcsset:selection>
 					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:filter>
+						</dcsset:filter>
 						<dcsset:order>
 							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
 							<dcsset:item xsi:type="dcsset:OrderItemField">
